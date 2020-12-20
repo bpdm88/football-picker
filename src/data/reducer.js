@@ -11,5 +11,5 @@ export default reducer;
 
 const addToList = (state, action) => ({
     ...state,
-    playerName: action.playerName,
+    players: [...state.players, action.playerName],
 });
