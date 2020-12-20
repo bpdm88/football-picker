@@ -5,26 +5,36 @@ class PlayerForm extends React.Component {
         super(props);
 
         this.state = {
-            name: "",
+            playerName: "",
         };
 
-        this.handleName = this.handleName.bind(this);
+        this.handleChangePlayerName = this.handleChangePlayerName.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
-    handleName(event) {
-        this.setState({ name: event.currentTarget.value });
+    handleChangePlayerName(event) {
+        this.setState({ playerName: event.currentTarget.value });
+    }
+
+    handleSubmit(event) {
+        event.preventDefault();
+
+        this.props.handleAddPlayer({ ...this.state });
     }
 
     render() {
+        let { playerName } = this.state;
+
         return (
-            <>
-                <h1>Add Player</h1>
-                <form>
-                    <label>Name</label>
-                    <input onChange={this.handleName}></input>
-                    <button>Add Player</button>
-                </form>
-            </>
+            <form onSubmit={this.handleSubmit}>
+                <label htmlFor="player-name">Player</label>
+                <input
+                    id="player-name"
+                    onChange={this.handleChangePlayerName}
+                    value={playerName}
+                />
+                <button>Add Player</button>
+            </form>
         );
     }
 }
