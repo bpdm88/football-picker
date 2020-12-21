@@ -16,6 +16,19 @@ const addToList = (state, action) => ({
     players: [...state.players, action.playerName],
 });
 
-const createTeams = () => {
-    console.log("hello");
+const createTeams = (state) => {
+    let array = state.players;
+
+    const shuffle = (array) => array.sort(() => 0.5 - Math.random());
+
+    let newArr = shuffle(array);
+
+    let team1 = newArr.slice(0, 4);
+    let team2 = newArr.slice(5, 9);
+
+    return {
+        ...state,
+        team1: team1,
+        team2: team2,
+    };
 };
