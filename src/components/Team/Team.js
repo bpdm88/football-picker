@@ -12,9 +12,22 @@ class Team extends React.Component {
     }
 
     render() {
+        let { team1, team2 } = this.props;
+
         return (
             <section>
                 <button onClick={this.handleClick}>Generate Teams</button>
+
+                <ul>
+                    {team1.map((player) => (
+                        <li key={player.id}>{player}</li>
+                    ))}
+                </ul>
+                <ul>
+                    {team2.map((player) => (
+                        <li key={player.id}>{player}</li>
+                    ))}
+                </ul>
             </section>
         );
     }

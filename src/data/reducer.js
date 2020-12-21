@@ -23,8 +23,8 @@ const createTeams = (state) => {
 
     let newArr = shuffle(array);
 
-    let team1 = newArr.slice(0, 4);
-    let team2 = newArr.slice(5, 9);
+    let team1 = newArr.slice(0, 5);
+    let team2 = newArr.slice(5, 10);
 
     return {
         ...state,
