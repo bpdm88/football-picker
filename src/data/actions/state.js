@@ -4,3 +4,9 @@ export const add = (data) => {
         playerName: data.playerName,
     };
 };
+
+export const generate = () => {
+    return {
+        type: "GENERATE_TEAMS",
+    };
+};

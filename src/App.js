@@ -1,5 +1,6 @@
 import PlayerForm from "./components/PlayerForm";
 import PlayerList from "./components/PlayerList";
+import Team from "./components/Team";
 
 const App = () => {
     return (
@@ -7,6 +8,7 @@ const App = () => {
             <h1>Title</h1>
             <PlayerForm />
             <PlayerList />
+            <Team />
         </>
     );
 };
