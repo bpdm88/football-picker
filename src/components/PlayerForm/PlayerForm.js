@@ -1,4 +1,5 @@
 import React from "react";
+import FormField from "./FormField";
 
 class PlayerForm extends React.Component {
     constructor(props) {
@@ -7,10 +8,14 @@ class PlayerForm extends React.Component {
         this.state = {
             playerName: "",
             attack: 2,
+            defence: 2,
+            creativity: 2,
         };
 
         this.handleChangePlayerName = this.handleChangePlayerName.bind(this);
         this.handleChangeAttack = this.handleChangeAttack.bind(this);
+        this.handleChangeDefence = this.handleChangeDefence.bind(this);
+        this.handleChangeCreativity = this.handleChangeCreativity.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -22,6 +27,14 @@ class PlayerForm extends React.Component {
         this.setState({ attack: event.currentTarget.value });
     }
 
+    handleChangeDefence(event) {
+        this.setState({ defence: event.currentTarget.value });
+    }
+
+    handleChangeCreativity(event) {
+        this.setState({ creativity: event.currentTarget.value });
+    }
+
     handleSubmit(event) {
         event.preventDefault();
 
@@ -29,24 +42,43 @@ class PlayerForm extends React.Component {
     }
 
     render() {
-        let { playerName, attack } = this.state;
+        let { playerName, attack, defence, creativity } = this.state;
 
         return (
             <form onSubmit={this.handleSubmit}>
-                <label htmlFor="player-name">Player</label>
-                <input
-                    id="player-name"
-                    onChange={this.handleChangePlayerName}
+                <FormField
+                    label="Name"
+                    name="Name"
+                    type="text"
+                    handleChange={this.handleChangePlayerName}
                     value={playerName}
                 />
-                <label htmlFor="attack-skill">Attack Skill</label>
-                <input
-                    id="attack-skill"
+                <FormField
+                    label="Attack Skill"
+                    name="Attack-Skill"
                     type="range"
                     min="0"
                     max="5"
-                    onChange={this.handleChangeAttack}
+                    handleChange={this.handleChangeAttack}
                     value={attack}
+                />
+                <FormField
+                    label="Defence Skill"
+                    name="Defence-Skill"
+                    type="range"
+                    min="0"
+                    max="5"
+                    handleChange={this.handleChangeDefence}
+                    value={defence}
+                />
+                <FormField
+                    label="Creativity Skill"
+                    name="Creativity-Skill"
+                    type="range"
+                    min="0"
+                    max="5"
+                    handleChange={this.handleChangeCreativity}
+                    value={creativity}
                 />
                 <button>Add Player</button>
             </form>

@@ -3,6 +3,8 @@ export const add = (data) => {
         type: "ADD_PLAYER",
         playerName: data.playerName,
         attack: data.attack,
+        defence: data.defence,
+        creativity: data.creativity,
     };
 };
 
