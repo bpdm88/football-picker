@@ -19,12 +19,12 @@ class Team extends React.Component {
                 <button onClick={this.handleClick}>Generate Teams</button>
                 <ul>
                     {team1.map((player) => (
-                        <li key={player.id}>{player}</li>
+                        <li key={player.id}>{player.name}</li>
                     ))}
                 </ul>
                 <ul>
                     {team2.map((player) => (
-                        <li key={player.id}>{player}</li>
+                        <li key={player.id}>{player.name}</li>
                     ))}
                 </ul>
             </section>
