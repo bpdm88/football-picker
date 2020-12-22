@@ -13,7 +13,10 @@ export default reducer;
 
 const addToList = (state, action) => ({
     ...state,
-    players: [...state.players, action.playerName],
+    players: [
+        ...state.players,
+        { name: action.playerName, attack: action.attack },
+    ],
 });
 
 const createTeams = (state) => {

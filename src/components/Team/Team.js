@@ -17,7 +17,6 @@ class Team extends React.Component {
         return (
             <section>
                 <button onClick={this.handleClick}>Generate Teams</button>
-
                 <ul>
                     {team1.map((player) => (
                         <li key={player.id}>{player}</li>

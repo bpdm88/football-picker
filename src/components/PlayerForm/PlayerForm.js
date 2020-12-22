@@ -6,14 +6,20 @@ class PlayerForm extends React.Component {
 
         this.state = {
             playerName: "",
+            attack: 2,
         };
 
         this.handleChangePlayerName = this.handleChangePlayerName.bind(this);
+        this.handleChangeAttack = this.handleChangeAttack.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleChangePlayerName(event) {
         this.setState({ playerName: event.currentTarget.value });
+    }
+
+    handleChangeAttack(event) {
+        this.setState({ attack: event.currentTarget.value });
     }
 
     handleSubmit(event) {
@@ -23,7 +29,7 @@ class PlayerForm extends React.Component {
     }
 
     render() {
-        let { playerName } = this.state;
+        let { playerName, attack } = this.state;
 
         return (
             <form onSubmit={this.handleSubmit}>
@@ -32,6 +38,15 @@ class PlayerForm extends React.Component {
                     id="player-name"
                     onChange={this.handleChangePlayerName}
                     value={playerName}
+                />
+                <label htmlFor="attack-skill">Attack Skill</label>
+                <input
+                    id="attack-skill"
+                    type="range"
+                    min="0"
+                    max="5"
+                    onChange={this.handleChangeAttack}
+                    value={attack}
                 />
                 <button>Add Player</button>
             </form>
