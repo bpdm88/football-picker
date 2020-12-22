@@ -3,7 +3,7 @@ import PlayerList from "./PlayerList";
 
 let mapStateToProps = (state) => {
     return {
-        playerName: state.players,
+        players: state.players,
     };
 };
 

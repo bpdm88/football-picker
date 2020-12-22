@@ -1,8 +1,13 @@
-const PlayerList = ({ playerName }) => {
+const PlayerList = ({ players }) => {
     return (
         <ul>
-            {playerName.map((player) => (
-                <li key={player.id}>{player}</li>
+            {players.map((player) => (
+                <li key={player.id}>
+                    <span>{player.name}</span>
+                    <span>{player.attack}</span>
+                    <span>{player.defence}</span>
+                    <span>{player.creativity}</span>
+                </li>
             ))}
         </ul>
     );
