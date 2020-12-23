@@ -3,7 +3,7 @@ const reducer = (state, action) => {
         case "ADD_PLAYER":
             return addToList(state, action);
         case "GENERATE_TEAMS":
-            return createTeams(state);
+            return createTeams(state, action);
         default:
             return state;
     }
@@ -24,7 +24,7 @@ const addToList = (state, action) => ({
     ],
 });
 
-const createTeams = (state) => {
+const createTeams = (state, action) => {
     let array = state.players;
 
     const shuffle = (array) => array.sort(() => 0.5 - Math.random());
@@ -38,5 +38,7 @@ const createTeams = (state) => {
         ...state,
         team1: team1,
         team2: team2,
+        teamName1: action.teamOne,
+        teamName2: action.teamTwo,
     };
 };

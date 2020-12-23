@@ -8,8 +8,10 @@ export const add = (data) => {
     };
 };
 
-export const generate = () => {
+export const generate = (data) => {
     return {
         type: "GENERATE_TEAMS",
+        teamOne: data.teamOne,
+        teamTwo: data.teamTwo,
     };
 };
