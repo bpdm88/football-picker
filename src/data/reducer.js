@@ -2,6 +2,8 @@ const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER":
             return addToList(state, action);
+        case "UPDATE_TEAM_NAMES":
+            return updateNames(state, action);
         case "GENERATE_TEAMS":
             return createTeams(state);
         default:
@@ -22,6 +24,12 @@ const addToList = (state, action) => ({
             creativity: action.creativity,
         },
     ],
+});
+
+const updateNames = (state, action) => ({
+    ...state,
+    teamName1: action.teamName1,
+    teamName2: action.teamName2,
 });
 
 const createTeams = (state) => {

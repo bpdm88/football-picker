@@ -13,3 +13,11 @@ export const generate = () => {
         type: "GENERATE_TEAMS",
     };
 };
+
+export const update = (data) => {
+    return {
+        type: "UPDATE_TEAM_NAMES",
+        teamName1: data.teamName1,
+        teamName2: data.teamName2,
+    };
+};
