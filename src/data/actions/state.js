@@ -8,16 +8,10 @@ export const add = (data) => {
     };
 };
 
-export const generate = () => {
+export const generate = (data) => {
     return {
         type: "GENERATE_TEAMS",
-    };
-};
-
-export const update = (data) => {
-    return {
-        type: "UPDATE_TEAM_NAMES",
-        teamName1: data.teamName1,
-        teamName2: data.teamName2,
+        teamOne: data.teamOne,
+        teamTwo: data.teamTwo,
     };
 };
