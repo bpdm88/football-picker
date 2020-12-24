@@ -45,9 +45,9 @@ const createTeams = (state, action) => {
     };
 };
 
-const createMatchInfo = () => {
+const createMatchInfo = (state) => {
     const weather = [
-        "Sun",
+        "Sunny",
         "Rain",
         "Overcast",
         "Thunderstorms",
@@ -55,7 +55,33 @@ const createMatchInfo = () => {
         "Heavy Rain",
     ];
 
-    const randomElement = weather[Math.floor(Math.random() * weather.length)];
+    const stadium = [
+        "Wembly",
+        "Old Trafford",
+        "St James' Park",
+        "Camp Nou",
+        "Allianz Arena",
+        "San Siro",
+    ];
 
-    console.log(randomElement);
+    const referee = [
+        "Howard Webb",
+        "Graham Poll",
+        "Mark Clattenburg",
+        "Mike Dean",
+        "Andre Marriner",
+        "Pierluigi Collina",
+    ];
+
+    const weatherInfo = weather[Math.floor(Math.random() * weather.length)];
+    const stadiumInfo = stadium[Math.floor(Math.random() * stadium.length)];
+    const refereeInfo = referee[Math.floor(Math.random() * referee.length)];
+    let today = new Date().toLocaleDateString();
+
+    const matchInfo = [today, weatherInfo, stadiumInfo, refereeInfo];
+
+    return {
+        ...state,
+        matchInfo: matchInfo,
+    };
 };
