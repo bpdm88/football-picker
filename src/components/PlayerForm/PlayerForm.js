@@ -16,6 +16,7 @@ class PlayerForm extends React.Component {
         this.handleChangeAttack = this.handleChangeAttack.bind(this);
         this.handleChangeDefence = this.handleChangeDefence.bind(this);
         this.handleChangeCreativity = this.handleChangeCreativity.bind(this);
+        this.handleAutomate = this.handleAutomate.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -39,6 +40,18 @@ class PlayerForm extends React.Component {
         event.preventDefault();
 
         this.props.handleAddPlayer({ ...this.state });
+    }
+
+    handleAutomate() {
+        let skill = (max) => Math.floor(Math.random() * Math.floor(max));
+
+        let autoAttack = skill(5);
+        let autoDefence = skill(5);
+        let autoCreativity = skill(5);
+
+        this.setState({ attack: autoAttack });
+        this.setState({ deffence: autoDefence });
+        this.setState({ creativity: autoCreativity });
     }
 
     render() {
@@ -81,6 +94,9 @@ class PlayerForm extends React.Component {
                     value={creativity}
                 />
                 <button>Add Player</button>
+                <button type="button" onClick={this.handleAutomate}>
+                    Auto Generate Skills
+                </button>
             </form>
         );
     }
