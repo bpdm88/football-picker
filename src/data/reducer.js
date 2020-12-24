@@ -1,9 +1,11 @@
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER":
-            return addToList(state, action);
+            return createPlayer(state, action);
         case "GENERATE_TEAMS":
             return createTeams(state, action);
+        case "MATCHDAY_INFO":
+            return createMatchInfo(state, action);
         default:
             return state;
     }
@@ -11,7 +13,7 @@ const reducer = (state, action) => {
 
 export default reducer;
 
-const addToList = (state, action) => ({
+const createPlayer = (state, action) => ({
     ...state,
     players: [
         ...state.players,
@@ -40,5 +42,46 @@ const createTeams = (state, action) => {
         team2: team2,
         teamName1: action.teamOne,
         teamName2: action.teamTwo,
+    };
+};
+
+const createMatchInfo = (state) => {
+    const weather = [
+        "Sunny",
+        "Rain",
+        "Overcast",
+        "Thunderstorms",
+        "Cloudy",
+        "Heavy Rain",
+    ];
+
+    const stadium = [
+        "Wembly",
+        "Old Trafford",
+        "St James' Park",
+        "Camp Nou",
+        "Allianz Arena",
+        "San Siro",
+    ];
+
+    const referee = [
+        "Howard Webb",
+        "Graham Poll",
+        "Mark Clattenburg",
+        "Mike Dean",
+        "Andre Marriner",
+        "Pierluigi Collina",
+    ];
+
+    const weatherInfo = weather[Math.floor(Math.random() * weather.length)];
+    const stadiumInfo = stadium[Math.floor(Math.random() * stadium.length)];
+    const refereeInfo = referee[Math.floor(Math.random() * referee.length)];
+    let today = new Date().toLocaleDateString();
+
+    const matchInfo = [today, weatherInfo, stadiumInfo, refereeInfo];
+
+    return {
+        ...state,
+        matchInfo: matchInfo,
     };
 };

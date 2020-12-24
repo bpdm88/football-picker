@@ -15,3 +15,9 @@ export const generate = (data) => {
         teamTwo: data.teamTwo,
     };
 };
+
+export const getInfo = () => {
+    return {
+        type: "MATCHDAY_INFO",
+    };
+};
