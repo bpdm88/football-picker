@@ -1,9 +1,11 @@
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER":
-            return addToList(state, action);
+            return createPlayer(state, action);
         case "GENERATE_TEAMS":
             return createTeams(state, action);
+        case "MATCHDAY_INFO":
+            return createMatchInfo(state, action);
         default:
             return state;
     }
@@ -11,7 +13,7 @@ const reducer = (state, action) => {
 
 export default reducer;
 
-const addToList = (state, action) => ({
+const createPlayer = (state, action) => ({
     ...state,
     players: [
         ...state.players,
@@ -41,4 +43,19 @@ const createTeams = (state, action) => {
         teamName1: action.teamOne,
         teamName2: action.teamTwo,
     };
+};
+
+const createMatchInfo = () => {
+    const weather = [
+        "Sun",
+        "Rain",
+        "Overcast",
+        "Thunderstorms",
+        "Cloudy",
+        "Heavy Rain",
+    ];
+
+    const randomElement = weather[Math.floor(Math.random() * weather.length)];
+
+    console.log(randomElement);
 };
