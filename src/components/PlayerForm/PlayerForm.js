@@ -50,7 +50,7 @@ class PlayerForm extends React.Component {
         let autoCreativity = skill(5);
 
         this.setState({ attack: autoAttack });
-        this.setState({ deffence: autoDefence });
+        this.setState({ defence: autoDefence });
         this.setState({ creativity: autoCreativity });
     }
 
