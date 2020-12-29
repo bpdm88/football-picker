@@ -94,6 +94,8 @@ const createScore = (state) => {
     let team1 = state.team1;
     let team2 = state.team2;
 
+    // Ability Scores
+
     let attack1 =
         team1.reduce((total, player) => total + +player.attack, 0) / 5;
     let defence1 =
@@ -108,7 +110,11 @@ const createScore = (state) => {
     let creativity2 =
         team2.reduce((total, player) => total + +player.creativity, 0) / 5;
 
+    // Decrease defense score
+
     let decrease = (score) => score / 2;
+
+    // Creativity enhance logic
 
     let enhance = (score) => {
         if (score >= 5) {
@@ -119,8 +125,19 @@ const createScore = (state) => {
             return 2;
         } else if (score >= 2) {
             return 1;
+        } else if (score >= 1) {
+            return 0.5;
         } else return 0;
     };
 
-    console.log(attack1 - decrease(defence2) + enhance(creativity1));
+    let team1Score = Math.round(
+        attack1 - decrease(defence2) + enhance(creativity1)
+    );
+
+    let team2Score = Math.round(
+        attack2 - decrease(defence1) + enhance(creativity2)
+    );
+
+    console.log(team1Score >= 0 ? team1Score : 0);
+    console.log(team2Score >= 0 ? team2Score : 0);
 };
