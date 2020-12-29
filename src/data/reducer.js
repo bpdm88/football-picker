@@ -92,32 +92,8 @@ const createScore = (state) => {
     // teams
 
     let team1 = state.team1;
-    let team2 = state.team2;
 
-    let enhancement = (score) => {
-        if (score >= 5) {
-            return 3;
-        } else if (score >= 4) {
-            return 2;
-        } else if (score >= 3) {
-            return 1;
-        } else if (score >= 2) {
-            return 0.5;
-        }
-    };
+    let attack = team1.reduce((total, player) => total + +player.attack, 0);
 
-    // team scores for each ability
-
-    let attackTeam1 = team1.reduce((total, val) => total + val.attack, 0) / 5;
-    let defenceTeam1 = team1.reduce((total, val) => total + val.defence, 0) / 5;
-    let createTeam1 =
-        team1.reduce((total, val) => total + val.creativity, 0) / 5;
-
-    // let attackTeam2 = team2.reduce((total, val) => total + val.attack, 0);
-    // let defenceTeam2 = team2.reduce((total, val) => total + val.defence, 0);
-    // let createTeam2 = team2.reduce((total, val) => total + val.creativity, 0);
-
-    console.log(attackTeam1);
-    console.log(defenceTeam1);
-    console.log(enhancement(createTeam1));
+    console.log(attack);
 };
