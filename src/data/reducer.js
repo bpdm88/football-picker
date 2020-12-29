@@ -144,7 +144,7 @@ const createScore = (state) => {
         } else if (team2Score > team1Score) {
             return state.teamName2;
         } else if (team1Score === team2Score) {
-            return "Draw";
+            return "draw";
         }
     };
 
