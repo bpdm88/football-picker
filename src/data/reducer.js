@@ -92,8 +92,27 @@ const createScore = (state) => {
     // teams
 
     let team1 = state.team1;
+    let team2 = state.team2;
 
-    let attack = team1.reduce((total, player) => total + +player.attack, 0);
+    let attack1 =
+        team1.reduce((total, player) => total + +player.attack, 0) / 5;
+    let defence1 =
+        team1.reduce((total, player) => total + +player.defence, 0) / 5;
+    let creativity1 =
+        team1.reduce((total, player) => total + +player.creativity, 0) / 5;
 
-    console.log(attack);
+    let attack2 =
+        team2.reduce((total, player) => total + +player.attack, 0) / 5;
+    let defence2 =
+        team2.reduce((total, player) => total + +player.defence, 0) / 5;
+    let creativity2 =
+        team2.reduce((total, player) => total + +player.creativity, 0) / 5;
+
+    console.log(attack1);
+    console.log(defence1);
+    console.log(creativity1);
+
+    console.log(attack2);
+    console.log(defence2);
+    console.log(creativity2);
 };
