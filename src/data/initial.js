@@ -7,6 +7,7 @@ const initial = {
     matchInfo: [],
     team1Goals: "",
     team2Goals: "",
+    winner: "",
 };
 
 export default initial;

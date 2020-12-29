@@ -138,9 +138,20 @@ const createScore = (state) => {
         attack2 - decrease(defence1) + enhance(creativity2)
     );
 
+    let winner = () => {
+        if (team1Score > team2Score) {
+            return state.teamName1;
+        } else if (team2Score > team1Score) {
+            return state.teamName2;
+        } else if (team1Score === team2Score) {
+            return "Draw";
+        }
+    };
+
     return {
         ...state,
         team1Goals: team1Score >= 0 ? team1Score : 0,
         team2Goals: team2Score >= 0 ? team2Score : 0,
+        winner: winner(),
     };
 };
