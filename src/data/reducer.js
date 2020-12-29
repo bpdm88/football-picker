@@ -89,9 +89,21 @@ const createMatchInfo = (state) => {
 };
 
 const createScore = (state) => {
-    let array = state.team1;
+    let team1 = state.team1;
+    let team2 = state.team2;
 
-    let attack = array.reduce((total, val) => total + val.attack, 0);
+    let attackTeam1 = team1.reduce((total, val) => total + val.attack, 0);
+    let defenceTeam1 = team1.reduce((total, val) => total + val.defence, 0);
+    let createTeam1 = team1.reduce((total, val) => total + val.creativity, 0);
 
-    console.log(attack);
+    let attackTeam2 = team2.reduce((total, val) => total + val.attack, 0);
+    let defenceTeam2 = team2.reduce((total, val) => total + val.defence, 0);
+    let createTeam2 = team2.reduce((total, val) => total + val.creativity, 0);
+
+    console.log(attackTeam1);
+    console.log(defenceTeam1);
+    console.log(createTeam1);
+    console.log(attackTeam2);
+    console.log(defenceTeam2);
+    console.log(createTeam2);
 };
