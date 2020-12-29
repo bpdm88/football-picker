@@ -1,6 +1,7 @@
 import PlayerForm from "./components/PlayerForm";
 import PlayerList from "./components/PlayerList";
 import Team from "./components/Team";
+import TeamNews from "./components/TeamNews";
 import MatchDay from "./components/MatchDay";
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
             <PlayerForm />
             <PlayerList />
             <Team />
+            <TeamNews />
             <MatchDay />
         </>
     );

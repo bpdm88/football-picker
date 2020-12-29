@@ -30,7 +30,6 @@ class Team extends React.Component {
     }
 
     render() {
-        let { team1, team2, teamName1, teamName2 } = this.props;
         let { teamOne, teamTwo } = this.state;
 
         return (
@@ -52,19 +51,6 @@ class Team extends React.Component {
                     />
                     <button>Generate Teams</button>
                 </form>
-
-                <h2>{teamName1}</h2>
-                <ul>
-                    {team1.map((player) => (
-                        <li key={player.id}>{player.name}</li>
-                    ))}
-                </ul>
-                <h2>{teamName2}</h2>
-                <ul>
-                    {team2.map((player) => (
-                        <li key={player.id}>{player.name}</li>
-                    ))}
-                </ul>
             </section>
         );
     }
