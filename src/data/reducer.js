@@ -148,10 +148,23 @@ const createScore = (state) => {
         }
     };
 
+    let whoWon = () => {
+        if (team1Score > team2Score) {
+            return state.team1;
+        } else if (team2Score > team1Score) {
+            return state.team2;
+        } else if (team1Score === team2Score) {
+            return state.players;
+        }
+    };
+
+    let motm = whoWon()[Math.floor(Math.random() * whoWon.length)];
+
     return {
         ...state,
         team1Goals: team1Score >= 0 ? team1Score : 0,
         team2Goals: team2Score >= 0 ? team2Score : 0,
         winner: winner(),
+        motm: motm.name,
     };
 };

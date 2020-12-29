@@ -8,6 +8,7 @@ const initial = {
     team1Goals: "",
     team2Goals: "",
     winner: "",
+    motd: "",
 };
 
 export default initial;
