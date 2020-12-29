@@ -3,6 +3,12 @@ import React from "react";
 class MatchDay extends React.Component {
     constructor(props) {
         super(props);
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.props.handleKickOff();
     }
 
     render() {
@@ -14,6 +20,7 @@ class MatchDay extends React.Component {
                         <li key={detail.id}>{detail}</li>
                     ))}
                 </ul>
+                <button onClick={this.handleClick}>Kick Off</button>
             </section>
         );
     }

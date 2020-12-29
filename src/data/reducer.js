@@ -6,6 +6,8 @@ const reducer = (state, action) => {
             return createTeams(state, action);
         case "MATCHDAY_INFO":
             return createMatchInfo(state, action);
+        case "GET_RESULT":
+            return createScore(state, action);
         default:
             return state;
     }
@@ -84,4 +86,8 @@ const createMatchInfo = (state) => {
         ...state,
         matchInfo: matchInfo,
     };
+};
+
+const createScore = () => {
+    console.log("GOAL");
 };
