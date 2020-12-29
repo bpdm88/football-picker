@@ -10,20 +10,23 @@ class PostMatch extends React.Component {
     handleClick() {}
 
     render() {
-        let { winner, motm, matchInfo } = this.props;
+        let { gameStarted, winner, motm, matchInfo } = this.props;
 
         return (
-            <>
-                <ul>
-                    <li>Man of the Match: {motm}</li>
-                    <li>
-                        An entertaining game at {matchInfo[2]} saw{" "}
-                        {winner === "draw"
-                            ? "a competitive draw"
-                            : `${winner} get the win today`}
-                    </li>
-                </ul>
-            </>
+            <section>
+                {!gameStarted ? null : (
+                    <ul>
+                        <li>Man of the Match: {motm}</li>
+                        <li>
+                            An entertaining game at {matchInfo[2]} saw{" "}
+                            {winner === "draw"
+                                ? "a competitive draw"
+                                : `${winner} get the win today`}
+                        </li>
+                        <li>Click the reset button to start again</li>
+                    </ul>
+                )}
+            </section>
         );
     }
 }

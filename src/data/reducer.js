@@ -61,9 +61,9 @@ const createMatchInfo = (state) => {
         "Wembly",
         "Old Trafford",
         "St James' Park",
-        "Camp Nou",
-        "Allianz Arena",
-        "San Siro",
+        "Stamford Bridge",
+        "Ashton Gate",
+        "White Hart Lane",
     ];
 
     const referee = [
@@ -162,6 +162,7 @@ const createScore = (state) => {
 
     return {
         ...state,
+        gameStarted: true,
         team1Goals: team1Score >= 0 ? team1Score : 0,
         team2Goals: team2Score >= 0 ? team2Score : 0,
         winner: winner(),

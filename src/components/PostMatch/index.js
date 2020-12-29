@@ -3,6 +3,7 @@ import PostMatch from "./PostMatch";
 
 let mapStateToProps = (state) => {
     return {
+        gameStarted: state.gameStarted,
         winner: state.winner,
         motm: state.motm,
         matchInfo: state.matchInfo,
