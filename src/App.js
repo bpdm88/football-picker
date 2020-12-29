@@ -3,6 +3,7 @@ import PlayerList from "./components/PlayerList";
 import Team from "./components/Team";
 import TeamNews from "./components/TeamNews";
 import MatchDay from "./components/MatchDay";
+import FinalScore from "./components/FinalScore";
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <Team />
             <TeamNews />
             <MatchDay />
+            <FinalScore />
         </>
     );
 };

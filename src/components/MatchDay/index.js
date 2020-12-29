@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import MatchDay from "./MatchDay";
+import { getResult } from "../../data/actions/state";
 
 let mapStateToProps = (state) => {
     return {
@@ -7,4 +8,10 @@ let mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps)(MatchDay);
+let mapDispatchToProps = (dispatch) => {
+    return {
+        handleKickOff: () => dispatch(getResult()),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(MatchDay);

@@ -21,3 +21,9 @@ export const getInfo = () => {
         type: "MATCHDAY_INFO",
     };
 };
+
+export const getResult = () => {
+    return {
+        type: "GET_RESULT",
+    };
+};
