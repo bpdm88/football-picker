@@ -88,6 +88,10 @@ const createMatchInfo = (state) => {
     };
 };
 
-const createScore = () => {
-    console.log("GOAL");
+const createScore = (state) => {
+    let array = state.team1;
+
+    let attack = array.reduce((total, val) => total + val.attack, 0);
+
+    console.log(attack);
 };
