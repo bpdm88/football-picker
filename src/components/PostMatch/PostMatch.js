@@ -17,7 +17,10 @@ class PostMatch extends React.Component {
                 <ul>
                     <li>Man of the Match: {motm}</li>
                     <li>
-                        An entertaining game at {matchInfo[2]} saw {winner} win.
+                        An entertaining game at {matchInfo[2]} saw{" "}
+                        {winner === "draw"
+                            ? "a competitive draw"
+                            : `${winner} get the win today`}
                     </li>
                 </ul>
             </>
