@@ -108,11 +108,19 @@ const createScore = (state) => {
     let creativity2 =
         team2.reduce((total, player) => total + +player.creativity, 0) / 5;
 
-    console.log(attack1);
-    console.log(defence1);
-    console.log(creativity1);
+    let decrease = (score) => score / 2;
 
-    console.log(attack2);
-    console.log(defence2);
-    console.log(creativity2);
+    let enhance = (score) => {
+        if (score >= 5) {
+            return 4;
+        } else if (score >= 4) {
+            return 3;
+        } else if (score >= 3) {
+            return 2;
+        } else if (score >= 2) {
+            return 1;
+        } else return 0;
+    };
+
+    console.log(attack1 - decrease(defence2) + enhance(creativity1));
 };
