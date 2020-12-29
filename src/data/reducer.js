@@ -61,9 +61,9 @@ const createMatchInfo = (state) => {
         "Wembly",
         "Old Trafford",
         "St James' Park",
-        "Camp Nou",
-        "Allianz Arena",
-        "San Siro",
+        "Stamford Bridge",
+        "Ashton Gate",
+        "White Hart Lane",
     ];
 
     const referee = [
@@ -144,14 +144,28 @@ const createScore = (state) => {
         } else if (team2Score > team1Score) {
             return state.teamName2;
         } else if (team1Score === team2Score) {
-            return "Draw";
+            return "draw";
         }
     };
 
+    let whoWon = () => {
+        if (team1Score > team2Score) {
+            return state.team1;
+        } else if (team2Score > team1Score) {
+            return state.team2;
+        } else if (team1Score === team2Score) {
+            return state.players;
+        }
+    };
+
+    let motm = whoWon()[Math.floor(Math.random() * whoWon.length)];
+
     return {
         ...state,
+        gameStarted: true,
         team1Goals: team1Score >= 0 ? team1Score : 0,
         team2Goals: team2Score >= 0 ? team2Score : 0,
         winner: winner(),
+        motm: motm.name,
     };
 };
