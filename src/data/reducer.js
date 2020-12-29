@@ -89,21 +89,39 @@ const createMatchInfo = (state) => {
 };
 
 const createScore = (state) => {
+    // teams
+
     let team1 = state.team1;
     let team2 = state.team2;
+
+    // team scores for each ability
 
     let attackTeam1 = team1.reduce((total, val) => total + val.attack, 0);
     let defenceTeam1 = team1.reduce((total, val) => total + val.defence, 0);
     let createTeam1 = team1.reduce((total, val) => total + val.creativity, 0);
 
-    let attackTeam2 = team2.reduce((total, val) => total + val.attack, 0);
-    let defenceTeam2 = team2.reduce((total, val) => total + val.defence, 0);
-    let createTeam2 = team2.reduce((total, val) => total + val.creativity, 0);
+    // let attackTeam2 = team2.reduce((total, val) => total + val.attack, 0);
+    // let defenceTeam2 = team2.reduce((total, val) => total + val.defence, 0);
+    // let createTeam2 = team2.reduce((total, val) => total + val.creativity, 0);
 
-    console.log(attackTeam1);
-    console.log(defenceTeam1);
-    console.log(createTeam1);
-    console.log(attackTeam2);
-    console.log(defenceTeam2);
-    console.log(createTeam2);
+    let enhancement = (create) => {
+        if (create > 5) {
+            return 3;
+        } else if (create > 4) {
+            return 2;
+        } else if (create > 3) {
+            return 1;
+        } else if (create > 2) {
+            return 0.5;
+        }
+    };
+
+    let defence = defenceTeam1 / 5 / 2;
+    let attack = attackTeam1 / 5;
+    let create = createTeam1 / 5;
+    let extra = enhancement(create);
+
+    console.log(defence);
+    console.log(attack);
+    console.log(extra);
 };
