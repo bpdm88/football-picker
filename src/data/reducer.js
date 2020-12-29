@@ -138,6 +138,9 @@ const createScore = (state) => {
         attack2 - decrease(defence1) + enhance(creativity2)
     );
 
-    console.log(team1Score >= 0 ? team1Score : 0);
-    console.log(team2Score >= 0 ? team2Score : 0);
+    return {
+        ...state,
+        team1Goals: team1Score >= 0 ? team1Score : 0,
+        team2Goals: team2Score >= 0 ? team2Score : 0,
+    };
 };
