@@ -1,10 +1,21 @@
 .primary-button {
     width: 120px;
     height: 40px;
-    border-radius: 5%;
+    border-radius: 5px;
     font-family: Nunito;
     border: 2px solid var(--grey);
     background-color: var(--green);
+    color: var(--white);
+    margin: var(--spacing-small);
+}
+
+.secondary-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Nunito;
+    border: 2px solid var(--grey);
+    background-color: var(--purple);
     color: var(--white);
     margin: var(--spacing-small);
 }

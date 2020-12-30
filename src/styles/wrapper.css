@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+body {
+    background-color: var(--primary-blue);
+}
+
 @media screen and (max-width: 750px) {
     #root {
         display: flex;

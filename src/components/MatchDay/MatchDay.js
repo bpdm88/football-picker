@@ -21,7 +21,9 @@ class MatchDay extends React.Component {
                         <li key={detail.id}>{detail}</li>
                     ))}
                 </ul>
-                <button onClick={this.handleClick}>Kick Off</button>
+                <button onClick={this.handleClick} className="primary-button">
+                    Kick Off
+                </button>
             </section>
         );
     }

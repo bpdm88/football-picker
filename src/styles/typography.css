@@ -16,18 +16,20 @@
 .heading-alpha {
     font-family: Righteous, sans-serif;
     font-size: var(--alpha-lg);
+    color: var(--white);
 }
 
 .heading-bravo {
     font-family: Roboto, sans-serif;
     font-size: var(--bravo-lg);
+    color: var(--white);
 }
 
 li,
-input,
 label {
     font-family: Nunito, sans-serif;
     font-size: var(--standard-lg);
+    color: var(--white);
 }
 
 @media screen and (max-width: 1200px) {

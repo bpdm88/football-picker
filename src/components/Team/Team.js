@@ -51,7 +51,9 @@ class Team extends React.Component {
                         handleChange={this.handleChangeTeamName2}
                         value={teamTwo}
                     />
-                    <button disabled={disabled}>Generate Teams</button>
+                    <button disabled={disabled} className="primary-button">
+                        Add Teams
+                    </button>
                 </form>
             </section>
         );

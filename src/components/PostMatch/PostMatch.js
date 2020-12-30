@@ -30,7 +30,9 @@ class PostMatch extends React.Component {
                     </ul>
                 )}
 
-                <button onClick={this.handleClick}>Reset</button>
+                <button onClick={this.handleClick} className="secondary-button">
+                    Reset
+                </button>
             </section>
         );
     }

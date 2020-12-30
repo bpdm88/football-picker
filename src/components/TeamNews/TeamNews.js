@@ -29,7 +29,9 @@ class TeamNews extends React.Component {
                         <li key={player.id}>{player.name}</li>
                     ))}
                 </ul>
-                <button onClick={this.handleClick}>Get Match Info</button>
+                <button onClick={this.handleClick} className="primary-button">
+                    Match Info
+                </button>
             </section>
         );
     }

@@ -2,8 +2,9 @@ header {
     grid-column: span 2;
     width: 1030px;
     height: 150px;
-    border: 2px solid black;
+    border-radius: 10px;
     margin: var(--spacing-medium);
+    background-color: var(--secondary-blue);
 }
 
 @media screen and (max-width: 1200px) {
