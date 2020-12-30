@@ -1,0 +1,7 @@
+.player-list {
+    grid-column-start: 2;
+    grid-row: span 2;
+    width: 500px;
+    height: 720px;
+    border: 2px solid black;
+}

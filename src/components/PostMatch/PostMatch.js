@@ -15,7 +15,7 @@ class PostMatch extends React.Component {
         let { gameStarted, winner, motm, matchInfo } = this.props;
 
         return (
-            <section>
+            <section className="small-card">
                 <h2>Post Match Report</h2>
                 {!gameStarted ? null : (
                     <ul>

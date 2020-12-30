@@ -15,7 +15,7 @@ class TeamNews extends React.Component {
         let { team1, team2, teamName1, teamName2 } = this.props;
 
         return (
-            <section>
+            <section className="small-card">
                 <h2>Team News</h2>
                 <h3>{teamName1}</h3>
                 <ul>

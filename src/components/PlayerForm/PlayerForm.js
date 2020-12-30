@@ -66,7 +66,7 @@ class PlayerForm extends React.Component {
         let { disabled } = this.props;
 
         return (
-            <section>
+            <section className="small-card">
                 <h2>Create Players</h2>
                 <form onSubmit={this.handleSubmit}>
                     <FormField
