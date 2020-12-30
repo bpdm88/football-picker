@@ -1,4 +1,4 @@
-import initial from "./initial";
+import initial from "../initial";
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -7,9 +7,9 @@ const reducer = (state, action) => {
         case "GENERATE_TEAMS":
             return createTeams(state, action);
         case "MATCHDAY_INFO":
-            return createMatchInfo(state, action);
+            return createMatchInfo(state);
         case "GET_RESULT":
-            return createScore(state, action);
+            return createScore(state);
         case "RESET":
             return initial;
         default:
