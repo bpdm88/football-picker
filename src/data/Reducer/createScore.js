@@ -1,8 +1,8 @@
 const createScore = (state) => {
     // To calculate the score:
-    // Each teams abilites (Attack, Defence, Creativity) is totaled then divided by 5
+    // Each teams abilites (Attack, Defence, Creativity) is totaled then divided by 5.
     // The defence score is then halved & an additonal enhancement is calculated depending on how high the teams creativity is.
-    // The number of goals scored is calculated by adding the attack score to the creativity enhancement less the other teams defence score
+    // The number of goals scored is calculated by adding the attack score to the creativity enhancement less the other teams defence score.
 
     // Ability Scores
 
