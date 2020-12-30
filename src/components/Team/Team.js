@@ -35,7 +35,7 @@ class Team extends React.Component {
 
         return (
             <section className="small-card">
-                <h2>Create Teams</h2>
+                <h2 className="heading-bravo">Create Teams</h2>
                 <form onSubmit={this.handleSubmit}>
                     <FormField
                         label="Team Name 1:"

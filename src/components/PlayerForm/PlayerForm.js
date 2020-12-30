@@ -67,7 +67,7 @@ class PlayerForm extends React.Component {
 
         return (
             <section className="small-card">
-                <h2>Create Players</h2>
+                <h2 className="heading-bravo">Create Players</h2>
                 <form onSubmit={this.handleSubmit}>
                     <FormField
                         label="Name"

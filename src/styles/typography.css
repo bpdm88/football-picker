@@ -1,0 +1,76 @@
+@font-face {
+    font-family: Righteous;
+    src: url(../assets/fonts/Righteous-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../assets/fonts/Nunito-Bold.ttf) format("truetype");
+}
+
+.heading-alpha {
+    font-family: Righteous, sans-serif;
+    font-size: var(--alpha-lg);
+}
+
+.heading-bravo {
+    font-family: Roboto, sans-serif;
+    font-size: var(--bravo-lg);
+}
+
+li,
+input,
+label {
+    font-family: Nunito, sans-serif;
+    font-size: var(--standard-lg);
+}
+
+.heading-delta {
+}
+
+@media screen and (max-width: 1200px) {
+    .heading-alpha {
+        font-size: var(--alpha-md);
+    }
+    .heading-bravo {
+        font-size: var(--bravo-md);
+    }
+    li,
+    input,
+    label {
+        font-size: var(--standard-md);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .heading-alpha {
+        font-size: var(--alpha-sm);
+    }
+    .heading-bravo {
+        font-size: var(--bravo-sm);
+    }
+    li,
+    input,
+    label {
+        font-size: var(--standard-sm);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .heading-alpha {
+        font-size: var(--alpha-xs);
+    }
+    .heading-bravo {
+        font-size: var(--bravo-xs);
+    }
+    li,
+    input,
+    label {
+        font-size: var(--standard-xs);
+    }
+}

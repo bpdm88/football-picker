@@ -16,7 +16,7 @@ class PostMatch extends React.Component {
 
         return (
             <section className="small-card">
-                <h2>Post Match Report</h2>
+                <h2 className="heading-bravo">Post Match Report</h2>
                 {!gameStarted ? null : (
                     <ul>
                         <li>Man of the Match: {motm}</li>

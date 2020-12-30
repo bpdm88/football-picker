@@ -1,9 +1,11 @@
 const FormField = ({ name, label, type, handleChange, value, min, max }) => {
     return (
         <div>
-            <label htmlFor={name}>{label}</label>
+            <label className="heading-charlie" htmlFor={name}>
+                {label}
+            </label>
             <input
-                className="input"
+                className="heading-charlie"
                 id={name}
                 type={type}
                 onChange={handleChange}

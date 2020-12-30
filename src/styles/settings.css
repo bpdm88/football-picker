@@ -7,6 +7,7 @@
     --purple: #bc9eee;
     --peach: #df90ac;
     --light-blue: #81c4ea;
+    --grey: #8c8c8c;
     --white: #ffffff;
 
     /* spacing */
@@ -21,4 +22,21 @@
     --card-sm: 350px;
     --card-md: 450px;
     --card-lg: 500px;
+
+    /* font sizes */
+
+    --alpha-xs: 20px;
+    --alpha-sm: 30px;
+    --alpha-md: 40px;
+    --alpha-lg: 50px;
+
+    --bravo-xs: 18px;
+    --bravo-sm: 20px;
+    --bravo-md: 24px;
+    --bravo-lg: 28px;
+
+    --standard-xs: 12px;
+    --standard-sm: 14px;
+    --standard-md: 16px;
+    --standard-lg: 18px;
 }
