@@ -1,0 +1,10 @@
+.primary-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5%;
+    font-family: Nunito;
+    border: 2px solid var(--grey);
+    background-color: var(--green);
+    color: var(--white);
+    margin: var(--spacing-small);
+}

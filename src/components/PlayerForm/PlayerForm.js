@@ -103,9 +103,15 @@ class PlayerForm extends React.Component {
                         handleChange={this.handleChangeCreativity}
                         value={creativity}
                     />
-                    <button disabled={disabled}>Add Player</button>
-                    <button type="button" onClick={this.handleAutomate}>
-                        Auto Generate Skills
+                    <button disabled={disabled} className="primary-button">
+                        Add Player
+                    </button>
+                    <button
+                        type="button"
+                        onClick={this.handleAutomate}
+                        className="primary-button"
+                    >
+                        Auto Skill
                     </button>
                 </form>
             </section>

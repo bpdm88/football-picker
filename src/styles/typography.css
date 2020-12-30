@@ -30,9 +30,6 @@ label {
     font-size: var(--standard-lg);
 }
 
-.heading-delta {
-}
-
 @media screen and (max-width: 1200px) {
     .heading-alpha {
         font-size: var(--alpha-md);
