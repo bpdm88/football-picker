@@ -1,3 +1,4 @@
+import Header from "./components/Header/Header";
 import PlayerForm from "./components/PlayerForm";
 import PlayerList from "./components/PlayerList";
 import Team from "./components/Team";
@@ -9,7 +10,7 @@ import PostMatch from "./components/PostMatch";
 const App = () => {
     return (
         <>
-            <h1>Title</h1>
+            <Header />
             <PlayerForm />
             <PlayerList />
             <Team />
