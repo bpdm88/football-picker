@@ -63,6 +63,7 @@ class PlayerForm extends React.Component {
 
     render() {
         let { playerName, attack, defence, creativity } = this.state;
+        let { disabled } = this.props;
 
         return (
             <form onSubmit={this.handleSubmit}>
@@ -100,7 +101,7 @@ class PlayerForm extends React.Component {
                     handleChange={this.handleChangeCreativity}
                     value={creativity}
                 />
-                <button>Add Player</button>
+                <button disabled={disabled}>Add Player</button>
                 <button type="button" onClick={this.handleAutomate}>
                     Auto Generate Skills
                 </button>
