@@ -16,21 +16,21 @@ class PostMatch extends React.Component {
 
         return (
             <section>
+                <h2>Post Match Report</h2>
                 {!gameStarted ? null : (
-                    <>
-                        <ul>
-                            <li>Man of the Match: {motm}</li>
-                            <li>
-                                An entertaining game at {matchInfo[2]} saw{" "}
-                                {winner === "draw"
-                                    ? "a competitive draw"
-                                    : `${winner} get the win today`}
-                            </li>
-                            <li>Click the reset button to start again</li>
-                        </ul>
-                        <button onClick={this.handleClick}>Reset</button>
-                    </>
+                    <ul>
+                        <li>Man of the Match: {motm}</li>
+                        <li>
+                            An entertaining game at {matchInfo[2]} saw{" "}
+                            {winner === "draw"
+                                ? "a competitive draw"
+                                : `${winner} get the win today`}
+                        </li>
+                        <li>Click the reset button to start again</li>
+                    </ul>
                 )}
+
+                <button onClick={this.handleClick}>Reset</button>
             </section>
         );
     }

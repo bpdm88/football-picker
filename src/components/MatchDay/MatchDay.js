@@ -15,6 +15,7 @@ class MatchDay extends React.Component {
         let { matchInfo } = this.props;
         return (
             <section>
+                <h2>Match Day Information</h2>
                 <ul>
                     {matchInfo.map((detail) => (
                         <li key={detail.id}>{detail}</li>
