@@ -4,10 +4,13 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     margin: auto;
+    justify-content: center;
 }
 
 @media screen and (max-width: 750px) {
     #root {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

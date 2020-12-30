@@ -1,5 +1,16 @@
 :root {
+    /* spacing */
+
     --spacing-small: 10px;
     --spacing-medium: 15px;
     --spacing-large: 20px;
+
+    /* colours */
+
+    /* card widths */
+
+    --card-xs: 300px;
+    --card-sm: 350px;
+    --card-md: 450px;
+    --card-lg: 500px;
 }

@@ -5,3 +5,21 @@ header {
     border: 2px solid black;
     margin: var(--spacing-medium);
 }
+
+@media screen and (max-width: 1200px) {
+    header {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        width: var(--card-xs);
+    }
+}

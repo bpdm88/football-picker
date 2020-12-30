@@ -1,8 +1,26 @@
 .large-card {
     grid-column-start: 2;
     grid-row: span 2;
-    width: 500px;
+    width: var(--card-lg);
     height: 740px;
     border: 2px solid black;
     margin: var(--spacing-medium);
+}
+
+@media screen and (max-width: 1200px) {
+    .large-card {
+        width: var(--card-md);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .large-card {
+        width: var(--card-sm);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .large-card {
+        width: var(--card-xs);
+    }
 }
