@@ -40,6 +40,13 @@ class PlayerForm extends React.Component {
         event.preventDefault();
 
         this.props.handleAddPlayer({ ...this.state });
+
+        this.setState({
+            playerName: "",
+            attack: 2,
+            defence: 2,
+            creativity: 2,
+        });
     }
 
     handleAutomate() {
