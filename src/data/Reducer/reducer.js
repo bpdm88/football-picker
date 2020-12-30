@@ -1,19 +1,19 @@
 import initial from "../initial";
-import createPlayer from "./createPlayer";
-import createTeams from "./createTeams";
-import createMatchInfo from "./createMatchInfo";
-import createScore from "./createScore";
+import Player from "./createPlayer";
+import Teams from "./createTeams";
+import MatchInfo from "./createMatchInfo";
+import Score from "./createScore";
 
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER":
-            return createPlayer(state, action);
+            return Player(state, action);
         case "GENERATE_TEAMS":
-            return createTeams(state, action);
+            return Teams(state, action);
         case "MATCHDAY_INFO":
-            return createMatchInfo(state);
+            return MatchInfo(state);
         case "GET_RESULT":
-            return createScore(state);
+            return Score(state);
         case "RESET":
             return initial;
         default:
