@@ -1,10 +1,13 @@
 const createScore = (state) => {
-    // teams
+    // To calculate the score:
+    // Each teams abilites (Attack, Defence, Creativity) is totaled then divided by 5
+    // The defence score is then halved & an additonal enhancement is calculated depending on how high the teams creativity is.
+    // The number of goals scored is calculated by adding the attack score to the creativity enhancement less the other teams defence score
+
+    // Ability Scores
 
     let team1 = state.team1;
     let team2 = state.team2;
-
-    // Ability Scores
 
     let attack1 =
         team1.reduce((total, player) => total + +player.attack, 0) / 5;
@@ -20,11 +23,11 @@ const createScore = (state) => {
     let creativity2 =
         team2.reduce((total, player) => total + +player.creativity, 0) / 5;
 
-    // Decrease defense score
+    // Decrease Defense Score
 
     let decrease = (score) => score / 2;
 
-    // Creativity enhance logic
+    // Creativity Enhancement
 
     let enhance = (score) => {
         if (score >= 5) {
@@ -40,6 +43,8 @@ const createScore = (state) => {
         } else return 0;
     };
 
+    // Goals Scored
+
     let team1Score = Math.round(
         attack1 - decrease(defence2) + enhance(creativity1)
     );
@@ -47,6 +52,8 @@ const createScore = (state) => {
     let team2Score = Math.round(
         attack2 - decrease(defence1) + enhance(creativity2)
     );
+
+    // To update Winner in state
 
     let winner = () => {
         if (team1Score > team2Score) {
@@ -57,6 +64,8 @@ const createScore = (state) => {
             return "draw";
         }
     };
+
+    // Determine who is eligible for man of the match
 
     let whoWon = () => {
         if (team1Score > team2Score) {
