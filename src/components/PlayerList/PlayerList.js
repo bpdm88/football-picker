@@ -1,6 +1,6 @@
 const PlayerList = ({ players }) => {
     return (
-        <section className="player-list">
+        <section className="large-card">
             <h2>Available Squad</h2>
             <ul>
                 {players.map((player) => (

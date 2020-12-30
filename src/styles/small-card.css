@@ -2,4 +2,11 @@
     width: 500px;
     height: 350px;
     border: 2px solid black;
+    margin: var(--spacing-medium);
 }
+
+/* @media screen and (max-width: 750px) {
+    .small-card {
+        margin: var(--spacing-small);
+    }
+} */

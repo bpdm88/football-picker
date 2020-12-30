@@ -1,5 +1,6 @@
 @import "./reset.css";
+@import "./settings.css";
 @import "./wrapper.css";
 @import "./header.css";
-@import "./player-list.css";
+@import "./large-card.css";
 @import "./small-card.css";
