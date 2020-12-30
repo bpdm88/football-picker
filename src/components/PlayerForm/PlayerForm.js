@@ -66,46 +66,49 @@ class PlayerForm extends React.Component {
         let { disabled } = this.props;
 
         return (
-            <form onSubmit={this.handleSubmit}>
-                <FormField
-                    label="Name"
-                    name="Name"
-                    type="text"
-                    handleChange={this.handleChangePlayerName}
-                    value={playerName}
-                />
-                <FormField
-                    label="Attack Skill"
-                    name="Attack-Skill"
-                    type="range"
-                    min="0"
-                    max="5"
-                    handleChange={this.handleChangeAttack}
-                    value={attack}
-                />
-                <FormField
-                    label="Defence Skill"
-                    name="Defence-Skill"
-                    type="range"
-                    min="0"
-                    max="5"
-                    handleChange={this.handleChangeDefence}
-                    value={defence}
-                />
-                <FormField
-                    label="Creativity Skill"
-                    name="Creativity-Skill"
-                    type="range"
-                    min="0"
-                    max="5"
-                    handleChange={this.handleChangeCreativity}
-                    value={creativity}
-                />
-                <button disabled={disabled}>Add Player</button>
-                <button type="button" onClick={this.handleAutomate}>
-                    Auto Generate Skills
-                </button>
-            </form>
+            <section>
+                <h2>Create Players</h2>
+                <form onSubmit={this.handleSubmit}>
+                    <FormField
+                        label="Name"
+                        name="Name"
+                        type="text"
+                        handleChange={this.handleChangePlayerName}
+                        value={playerName}
+                    />
+                    <FormField
+                        label="Attack Skill"
+                        name="Attack-Skill"
+                        type="range"
+                        min="0"
+                        max="5"
+                        handleChange={this.handleChangeAttack}
+                        value={attack}
+                    />
+                    <FormField
+                        label="Defence Skill"
+                        name="Defence-Skill"
+                        type="range"
+                        min="0"
+                        max="5"
+                        handleChange={this.handleChangeDefence}
+                        value={defence}
+                    />
+                    <FormField
+                        label="Creativity Skill"
+                        name="Creativity-Skill"
+                        type="range"
+                        min="0"
+                        max="5"
+                        handleChange={this.handleChangeCreativity}
+                        value={creativity}
+                    />
+                    <button disabled={disabled}>Add Player</button>
+                    <button type="button" onClick={this.handleAutomate}>
+                        Auto Generate Skills
+                    </button>
+                </form>
+            </section>
         );
     }
 }

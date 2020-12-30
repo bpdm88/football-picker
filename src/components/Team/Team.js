@@ -35,6 +35,7 @@ class Team extends React.Component {
 
         return (
             <section>
+                <h2>Create Teams</h2>
                 <form onSubmit={this.handleSubmit}>
                     <FormField
                         label="Team Name 1:"
