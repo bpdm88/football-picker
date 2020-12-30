@@ -3,7 +3,7 @@ import { createStore, applyMiddleware, compose } from "redux";
 import thunk from "redux-thunk";
 
 import initialState from "./initial";
-import reducer from "./reducer";
+import reducer from "./Reducer/reducer";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 

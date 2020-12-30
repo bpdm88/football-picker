@@ -7,7 +7,9 @@ class PostMatch extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
 
-    handleClick() {}
+    handleClick() {
+        this.props.reset();
+    }
 
     render() {
         let { gameStarted, winner, motm, matchInfo } = this.props;
@@ -15,16 +17,19 @@ class PostMatch extends React.Component {
         return (
             <section>
                 {!gameStarted ? null : (
-                    <ul>
-                        <li>Man of the Match: {motm}</li>
-                        <li>
-                            An entertaining game at {matchInfo[2]} saw{" "}
-                            {winner === "draw"
-                                ? "a competitive draw"
-                                : `${winner} get the win today`}
-                        </li>
-                        <li>Click the reset button to start again</li>
-                    </ul>
+                    <>
+                        <ul>
+                            <li>Man of the Match: {motm}</li>
+                            <li>
+                                An entertaining game at {matchInfo[2]} saw{" "}
+                                {winner === "draw"
+                                    ? "a competitive draw"
+                                    : `${winner} get the win today`}
+                            </li>
+                            <li>Click the reset button to start again</li>
+                        </ul>
+                        <button onClick={this.handleClick}>Reset</button>
+                    </>
                 )}
             </section>
         );

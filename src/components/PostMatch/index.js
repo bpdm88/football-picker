@@ -1,5 +1,6 @@
 import { connect } from "react-redux";
 import PostMatch from "./PostMatch";
+import { resetGame } from "../../data/actions/state";
 
 let mapStateToProps = (state) => {
     return {
@@ -10,4 +11,10 @@ let mapStateToProps = (state) => {
     };
 };
 
-export default connect(mapStateToProps)(PostMatch);
+let mapDispatchToProps = (dispatch) => {
+    return {
+        reset: () => dispatch(resetGame()),
+    };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(PostMatch);
