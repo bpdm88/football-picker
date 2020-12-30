@@ -31,6 +31,7 @@ class Team extends React.Component {
 
     render() {
         let { teamOne, teamTwo } = this.state;
+        let { disabled } = this.props;
 
         return (
             <section>
@@ -49,7 +50,7 @@ class Team extends React.Component {
                         handleChange={this.handleChangeTeamName2}
                         value={teamTwo}
                     />
-                    <button>Generate Teams</button>
+                    <button disabled={disabled}>Generate Teams</button>
                 </form>
             </section>
         );

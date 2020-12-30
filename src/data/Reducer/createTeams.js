@@ -14,6 +14,7 @@ const createTeams = (state, action) => {
         team2: team2,
         teamName1: action.teamOne,
         teamName2: action.teamTwo,
+        teamsSubmitted: true,
     };
 };
 
