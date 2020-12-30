@@ -10,12 +10,14 @@
 @media screen and (max-width: 1200px) {
     .large-card {
         width: var(--card-md);
+        margin: var(--spacing-small);
     }
 }
 
 @media screen and (max-width: 960px) {
     .large-card {
         width: var(--card-sm);
+        margin: var(--spacing-small);
     }
 }
 

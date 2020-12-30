@@ -1,11 +1,19 @@
 :root {
+    /* colours */
+
+    --primary-blue: #242a38;
+    --secondary-blue: #253341;
+    --green: #40e1b1;
+    --purple: #bc9eee;
+    --peach: #df90ac;
+    --light-blue: #81c4ea;
+    --white: #ffffff;
+
     /* spacing */
 
     --spacing-small: 10px;
     --spacing-medium: 15px;
     --spacing-large: 20px;
-
-    /* colours */
 
     /* card widths */
 
