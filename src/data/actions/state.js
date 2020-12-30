@@ -27,3 +27,9 @@ export const getResult = () => {
         type: "GET_RESULT",
     };
 };
+
+export const resetGame = () => {
+    return {
+        type: "RESET",
+    };
+};

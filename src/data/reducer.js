@@ -1,3 +1,5 @@
+import initial from "./initial";
+
 const reducer = (state, action) => {
     switch (action.type) {
         case "ADD_PLAYER":
@@ -8,6 +10,8 @@ const reducer = (state, action) => {
             return createMatchInfo(state, action);
         case "GET_RESULT":
             return createScore(state, action);
+        case "RESET":
+            return initial;
         default:
             return state;
     }
