@@ -40,6 +40,13 @@
     color: var(--green);
 }
 
+.heading-echo {
+    font-family: Roboto, sans-serif;
+    font-size: var(--echo-lg);
+    color: var(--white);
+    padding: var(--spacing-lg);
+}
+
 label,
 button,
 li {
@@ -63,6 +70,9 @@ li {
     .heading-delta {
         font-size: var(--delta-md);
     }
+    .heading-echo {
+        font-size: var(--echo-md);
+    }
     label,
     button,
     li {
@@ -84,6 +94,9 @@ li {
     .heading-delta {
         font-size: var(--delta-sm);
     }
+    .heading-echo {
+        font-size: var(--echo-sm);
+    }
     label,
     button,
     li {
@@ -104,6 +117,9 @@ li {
     }
     .heading-delta {
         font-size: var(--delta-xs);
+    }
+    .heading-echo {
+        font-size: var(--echo-xs);
     }
     label,
     button,
