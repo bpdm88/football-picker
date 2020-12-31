@@ -19,6 +19,11 @@ dd {
     margin: 0;
 }
 
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
 /* Set core root defaults */
 html {
     scroll-behavior: smooth;
