@@ -22,6 +22,7 @@ dd {
 ul {
     margin: 0;
     padding-left: 0;
+    list-style-type: none;
 }
 
 /* Set core root defaults */

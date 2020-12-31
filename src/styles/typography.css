@@ -30,12 +30,19 @@
     font-family: Nunito, sans-serif;
     font-size: var(--charlie-lg);
     color: var(--white);
-    display: inline-block;
+    display: inline;
     padding: var(--spacing-sm);
 }
 
+.heading-delta {
+    font-family: Nunito, sans-serif;
+    font-size: var(--delta-lg);
+    color: var(--green);
+}
+
 label,
-button {
+button,
+li {
     font-family: Nunito, sans-serif;
     font-size: var(--standard-lg);
     color: var(--white);
@@ -51,10 +58,14 @@ button {
         font-size: var(--bravo-md);
     }
     .heading-charlie {
-        font-size: var(--charlie-mid);
+        font-size: var(--charlie-md);
+    }
+    .heading-delta {
+        font-size: var(--delta-md);
     }
     label,
-    button {
+    button,
+    li {
         font-size: var(--standard-md);
     }
 }
@@ -70,8 +81,12 @@ button {
     .heading-charlie {
         font-size: var(--charlie-sm);
     }
+    .heading-delta {
+        font-size: var(--delta-sm);
+    }
     label,
-    button {
+    button,
+    li {
         font-size: var(--standard-sm);
     }
 }
@@ -87,8 +102,12 @@ button {
     .heading-charlie {
         font-size: var(--charlie-xs);
     }
+    .heading-delta {
+        font-size: var(--delta-xs);
+    }
     label,
-    button {
+    button,
+    li {
         font-size: var(--standard-xs);
     }
 }

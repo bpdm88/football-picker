@@ -11,10 +11,6 @@
     align-items: flex-end;
 }
 
-.large-card ul {
-    list-style-type: none;
-}
-
 li {
     padding-top: var(--spacing-sm);
 }

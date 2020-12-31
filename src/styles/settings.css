@@ -48,8 +48,13 @@
     --charlie-md: 16px;
     --charlie-lg: 18px;
 
-    --standard-xs: 12px;
-    --standard-sm: 14px;
-    --standard-md: 16px;
-    --standard-lg: 18px;
+    --delta-xs: 12px;
+    --delta-sm: 14px;
+    --delta-md: 16px;
+    --delta-lg: 18px;
+
+    --standard-xs: 10px;
+    --standard-sm: 12px;
+    --standard-md: 14px;
+    --standard-lg: 16px;
 }
