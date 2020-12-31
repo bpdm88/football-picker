@@ -75,6 +75,7 @@ class PlayerForm extends React.Component {
                         type="text"
                         handleChange={this.handleChangePlayerName}
                         value={playerName}
+                        className="label-block"
                     />
                     <FormField
                         label="Attack Skill"

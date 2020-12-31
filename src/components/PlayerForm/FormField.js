@@ -1,11 +1,20 @@
-const FormField = ({ name, label, type, handleChange, value, min, max }) => {
+const FormField = ({
+    name,
+    label,
+    type,
+    handleChange,
+    value,
+    min,
+    max,
+    className,
+}) => {
     return (
         <div>
-            <label className="heading-charlie" htmlFor={name}>
+            <label className={className} htmlFor={name}>
                 {label}
             </label>
             <input
-                className="heading-charlie"
+                className={className}
                 id={name}
                 type={type}
                 onChange={handleChange}

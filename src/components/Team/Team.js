@@ -43,6 +43,7 @@ class Team extends React.Component {
                         type="text"
                         handleChange={this.handleChangeTeamName1}
                         value={teamOne}
+                        className="label-block"
                     />
                     <FormField
                         label="Team Name 2:"
@@ -50,6 +51,7 @@ class Team extends React.Component {
                         type="text"
                         handleChange={this.handleChangeTeamName2}
                         value={teamTwo}
+                        className="label-block"
                     />
                     <button disabled={disabled} className="primary-button">
                         Add Teams

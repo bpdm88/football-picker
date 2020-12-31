@@ -12,9 +12,10 @@
 
     /* spacing */
 
-    --spacing-small: 10px;
-    --spacing-medium: 15px;
-    --spacing-large: 20px;
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
 
     /* card widths */
 

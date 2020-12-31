@@ -3,7 +3,7 @@ header {
     width: 1030px;
     height: 150px;
     border-radius: 10px;
-    margin: var(--spacing-medium);
+    margin: var(--spacing-md);
     background-color: var(--secondary-blue);
 }
 

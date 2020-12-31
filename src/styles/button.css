@@ -6,7 +6,8 @@
     border: 2px solid var(--grey);
     background-color: var(--green);
     color: var(--white);
-    margin: var(--spacing-small);
+    margin-top: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
 }
 
 .secondary-button {
@@ -17,5 +18,6 @@
     border: 2px solid var(--grey);
     background-color: var(--purple);
     color: var(--white);
-    margin: var(--spacing-small);
+    margin-top: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
 }
