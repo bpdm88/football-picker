@@ -23,7 +23,7 @@
     font-family: Roboto, sans-serif;
     font-size: var(--bravo-lg);
     color: var(--white);
-    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-md);
 }
 
 .heading-charlie {
@@ -31,15 +31,16 @@
     font-size: var(--charlie-lg);
     color: var(--white);
     display: inline-block;
-    margin: var(--spacing-sm);
+    padding: var(--spacing-sm);
 }
 
-li,
 label {
     font-family: Nunito, sans-serif;
     font-size: var(--standard-lg);
     color: var(--white);
 }
+
+/* Media Queries */
 
 @media screen and (max-width: 1200px) {
     .heading-alpha {
@@ -48,11 +49,9 @@ label {
     .heading-bravo {
         font-size: var(--bravo-md);
     }
-
     .heading-charlie {
         font-size: var(--charlie-mid);
     }
-    li,
     label {
         font-size: var(--standard-md);
     }
@@ -69,7 +68,6 @@ label {
     .heading-charlie {
         font-size: var(--charlie-sm);
     }
-    li,
     label {
         font-size: var(--standard-sm);
     }
@@ -86,7 +84,6 @@ label {
     .heading-charlie {
         font-size: var(--charlie-xs);
     }
-    li,
     label {
         font-size: var(--standard-xs);
     }
