@@ -19,10 +19,17 @@
 
     /* card widths */
 
-    --card-xs: 300px;
-    --card-sm: 350px;
-    --card-md: 450px;
-    --card-lg: 500px;
+    --card-width-xs: 300px;
+    --card-width-sm: 350px;
+    --card-width-md: 450px;
+    --card-width-lg: 500px;
+
+    /* card heights */
+
+    --card-height-xs: 300px;
+    --card-height-sm: 350px;
+    --card-height-md: 740px;
+    --card-height-lg: 850px;
 
     /* font sizes */
 

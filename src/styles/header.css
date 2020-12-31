@@ -21,6 +21,6 @@ header {
 
 @media screen and (max-width: 750px) {
     header {
-        width: var(--card-xs);
+        width: var(--card-width-xs);
     }
 }

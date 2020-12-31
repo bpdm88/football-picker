@@ -23,7 +23,6 @@
     font-family: Roboto, sans-serif;
     font-size: var(--bravo-lg);
     color: var(--white);
-    padding-bottom: var(--spacing-md);
 }
 
 .heading-charlie {
@@ -34,7 +33,8 @@
     padding: var(--spacing-sm);
 }
 
-label {
+label,
+button {
     font-family: Nunito, sans-serif;
     font-size: var(--standard-lg);
     color: var(--white);
@@ -52,7 +52,8 @@ label {
     .heading-charlie {
         font-size: var(--charlie-mid);
     }
-    label {
+    label,
+    button {
         font-size: var(--standard-md);
     }
 }
@@ -68,7 +69,8 @@ label {
     .heading-charlie {
         font-size: var(--charlie-sm);
     }
-    label {
+    label,
+    button {
         font-size: var(--standard-sm);
     }
 }
@@ -84,7 +86,8 @@ label {
     .heading-charlie {
         font-size: var(--charlie-xs);
     }
-    label {
+    label,
+    button {
         font-size: var(--standard-xs);
     }
 }

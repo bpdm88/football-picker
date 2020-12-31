@@ -6,7 +6,9 @@
     border: 2px solid var(--grey);
     background-color: var(--green);
     color: var(--white);
-    margin: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
 }
 
 .secondary-button {
@@ -17,5 +19,18 @@
     border: 2px solid var(--grey);
     background-color: var(--purple);
     color: var(--white);
-    margin: var(--spacing-sm);
+    margin-right: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+@media screen and (max-width: 750px) {
+    .primary-button {
+        width: 80px;
+        height: 40px;
+    }
+    .secondary-button {
+        width: 80px;
+        height: 40px;
+    }
 }
