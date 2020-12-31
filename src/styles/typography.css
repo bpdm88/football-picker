@@ -23,6 +23,7 @@
     font-family: Roboto, sans-serif;
     font-size: var(--bravo-lg);
     color: var(--white);
+    padding-bottom: var(--spacing-md);
 }
 
 .heading-charlie {
@@ -64,7 +65,7 @@ button {
     }
     .heading-bravo {
         font-size: var(--bravo-sm);
-        margin-bottom: var(--spacing-md);
+        padding-bottom: var(--spacing-sm);
     }
     .heading-charlie {
         font-size: var(--charlie-sm);
