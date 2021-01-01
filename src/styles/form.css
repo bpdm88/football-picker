@@ -10,7 +10,24 @@ label {
 
 input {
     font-family: Nunito, sans-serif;
-    margin-bottom: var(--spacing-lg);
+    /* margin-bottom: var(--spacing-lg); */
+}
+
+.skill-container {
+    padding-top: var(--spacing-lg);
+    padding-bottom: var(--spacing-lg);
+}
+
+#Defence-Skill {
+    max-width: 129px;
+}
+
+#Attack-Skill {
+    max-width: 129px;
+}
+
+#Creativity-Skill {
+    max-width: 129px;
 }
 
 @media screen and (max-width: 750px) {
@@ -19,5 +36,9 @@ input {
     }
     label {
         width: 100px;
+    }
+    .skill-container {
+        padding-top: var(--spacing-xs);
+        padding-bottom: var(--spacing-xs);
     }
 }

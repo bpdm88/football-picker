@@ -77,33 +77,35 @@ class PlayerForm extends React.Component {
                         value={playerName}
                         className="label-block"
                     />
-                    <FormField
-                        label="Attack Skill"
-                        name="Attack-Skill"
-                        type="range"
-                        min="0"
-                        max="5"
-                        handleChange={this.handleChangeAttack}
-                        value={attack}
-                    />
-                    <FormField
-                        label="Defence Skill"
-                        name="Defence-Skill"
-                        type="range"
-                        min="0"
-                        max="5"
-                        handleChange={this.handleChangeDefence}
-                        value={defence}
-                    />
-                    <FormField
-                        label="Creativity Skill"
-                        name="Creativity-Skill"
-                        type="range"
-                        min="0"
-                        max="5"
-                        handleChange={this.handleChangeCreativity}
-                        value={creativity}
-                    />
+                    <div className="skill-container">
+                        <FormField
+                            label="Attack Skill"
+                            name="Attack-Skill"
+                            type="range"
+                            min="0"
+                            max="5"
+                            handleChange={this.handleChangeAttack}
+                            value={attack}
+                        />
+                        <FormField
+                            label="Defence Skill"
+                            name="Defence-Skill"
+                            type="range"
+                            min="0"
+                            max="5"
+                            handleChange={this.handleChangeDefence}
+                            value={defence}
+                        />
+                        <FormField
+                            label="Creativity Skill"
+                            name="Creativity-Skill"
+                            type="range"
+                            min="0"
+                            max="5"
+                            handleChange={this.handleChangeCreativity}
+                            value={creativity}
+                        />
+                    </div>
                     <button disabled={disabled} className="primary-button">
                         Add Player
                     </button>
