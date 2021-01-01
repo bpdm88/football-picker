@@ -7,7 +7,6 @@ let mapStateToProps = (state) => {
         gameStarted: state.gameStarted,
         winner: state.winner,
         motm: state.motm,
-        matchInfo: state.matchInfo,
     };
 };
 

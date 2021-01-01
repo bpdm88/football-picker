@@ -48,17 +48,16 @@
     --charlie-md: 16px;
     --charlie-lg: 18px;
 
-    --delta-xs: 12px;
-    --delta-sm: 14px;
-    --delta-md: 16px;
-    --delta-lg: 18px;
+    --delta-xs: 14px;
+    --delta-sm: 16px;
+    --delta-md: 18px;
+    --delta-lg: 20px;
 
-    --echo-xs: 20px;
-    --echo-sm: 30px;
-    --echo-md: 40px;
+    --echo-xs: 32px;
+    --echo-sm: 40px;
+    --echo-md: 46px;
     --echo-lg: 50px;
 
-    --standard-xs: 10px;
     --standard-sm: 12px;
     --standard-md: 14px;
     --standard-lg: 16px;

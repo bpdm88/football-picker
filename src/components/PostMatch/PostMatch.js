@@ -12,7 +12,7 @@ class PostMatch extends React.Component {
     }
 
     render() {
-        let { gameStarted, winner, motm, matchInfo } = this.props;
+        let { gameStarted, winner, motm } = this.props;
 
         return (
             <section className="small-card">
@@ -20,9 +20,14 @@ class PostMatch extends React.Component {
                 <div className="content">
                     {!gameStarted ? null : (
                         <ul>
-                            <li>Man of the Match: {motm}</li>
                             <li>
-                                An entertaining game at {matchInfo[2]} saw{" "}
+                                Man of the Match:{" "}
+                                <span style={{ color: "var(--green)" }}>
+                                    {motm}
+                                </span>
+                            </li>
+                            <li>
+                                An entertaining game between the two sides saw{" "}
                                 {winner === "draw"
                                     ? "a competitive draw"
                                     : `${winner} get the win today`}

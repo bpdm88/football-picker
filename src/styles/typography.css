@@ -117,9 +117,4 @@ li {
     .heading-echo {
         font-size: var(--echo-xs);
     }
-    label,
-    button,
-    li {
-        font-size: var(--standard-xs);
-    }
 }
