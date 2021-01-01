@@ -2,12 +2,3 @@
     color: var(--green);
     padding: var(--spacing-lg);
 }
-
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 960px) {
-}
-
-@media screen and (max-width: 750px) {
-}

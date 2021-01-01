@@ -17,6 +17,7 @@
     font-family: Righteous, sans-serif;
     font-size: var(--alpha-lg);
     color: var(--white);
+    padding: var(--spacing-lg);
 }
 
 .heading-bravo {
@@ -58,9 +59,6 @@ li {
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
-    .heading-alpha {
-        font-size: var(--alpha-md);
-    }
     .heading-bravo {
         font-size: var(--bravo-md);
     }
@@ -81,9 +79,6 @@ li {
 }
 
 @media screen and (max-width: 960px) {
-    .heading-alpha {
-        font-size: var(--alpha-sm);
-    }
     .heading-bravo {
         font-size: var(--bravo-sm);
         padding-bottom: var(--spacing-sm);
@@ -106,7 +101,8 @@ li {
 
 @media screen and (max-width: 750px) {
     .heading-alpha {
-        font-size: var(--alpha-xs);
+        font-size: var(--alpha-sm);
+        padding: var(--spacing-sm);
     }
     .heading-bravo {
         font-size: var(--bravo-xs);
