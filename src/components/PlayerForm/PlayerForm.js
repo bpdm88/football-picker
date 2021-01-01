@@ -106,16 +106,18 @@ class PlayerForm extends React.Component {
                             value={creativity}
                         />
                     </div>
-                    <button disabled={disabled} className="primary-button">
-                        Add Player
-                    </button>
-                    <button
-                        type="button"
-                        onClick={this.handleAutomate}
-                        className="primary-button"
-                    >
-                        Auto Skill
-                    </button>
+                    <div className="button-container">
+                        <button disabled={disabled} className="primary-button">
+                            Add Player
+                        </button>
+                        <button
+                            type="button"
+                            onClick={this.handleAutomate}
+                            className="primary-button"
+                        >
+                            Auto Skill
+                        </button>
+                    </div>
                 </form>
             </section>
         );
