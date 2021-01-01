@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Righteous;
+    src: url(../assets/fonts/Righteous-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../assets/fonts/Nunito-Bold.ttf) format("truetype");
+}
+
+.heading-alpha {
+    font-family: Righteous, sans-serif;
+    font-size: var(--alpha-lg);
+    color: var(--white);
+    padding: var(--spacing-lg);
+}
+
+.heading-bravo {
+    font-family: Roboto, sans-serif;
+    font-size: var(--bravo-lg);
+    color: var(--white);
+    padding-bottom: var(--spacing-md);
+}
+
+.heading-charlie {
+    font-family: Nunito, sans-serif;
+    font-size: var(--charlie-lg);
+    color: var(--white);
+    display: inline;
+    padding: var(--spacing-sm);
+}
+
+.heading-delta {
+    font-family: Nunito, sans-serif;
+    font-size: var(--delta-lg);
+    color: var(--green);
+}
+
+.heading-echo {
+    font-family: Roboto, sans-serif;
+    font-size: var(--echo-lg);
+    color: var(--white);
+    padding: var(--spacing-lg);
+}
+
+label,
+button,
+li {
+    font-family: Nunito, sans-serif;
+    font-size: var(--standard-lg);
+    color: var(--white);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .heading-bravo {
+        font-size: var(--bravo-md);
+    }
+    .heading-charlie {
+        font-size: var(--charlie-md);
+    }
+    .heading-delta {
+        font-size: var(--delta-md);
+    }
+    .heading-echo {
+        font-size: var(--echo-md);
+    }
+    label,
+    button,
+    li {
+        font-size: var(--standard-md);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .heading-bravo {
+        font-size: var(--bravo-sm);
+        padding-bottom: var(--spacing-sm);
+    }
+    .heading-charlie {
+        font-size: var(--charlie-sm);
+    }
+    .heading-delta {
+        font-size: var(--delta-sm);
+    }
+    .heading-echo {
+        font-size: var(--echo-sm);
+    }
+    label,
+    button,
+    li {
+        font-size: var(--standard-sm);
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .heading-alpha {
+        font-size: var(--alpha-sm);
+        padding: var(--spacing-sm);
+    }
+    .heading-bravo {
+        font-size: var(--bravo-xs);
+        margin-bottom: var(--spacing-sm);
+    }
+    .heading-charlie {
+        font-size: var(--charlie-xs);
+    }
+    .heading-delta {
+        font-size: var(--delta-xs);
+    }
+    .heading-echo {
+        font-size: var(--echo-xs);
+    }
+}

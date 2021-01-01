@@ -1,29 +1,29 @@
 const createMatchInfo = (state) => {
     const weather = [
-        "Sunny",
-        "Rain",
-        "Overcast",
-        "Thunderstorms",
-        "Cloudy",
-        "Heavy Rain",
+        "Weather: Sunny",
+        "Weather: Rain",
+        "Weather: Overcast",
+        "Weather: Thunderstorms",
+        "Weather: Cloudy",
+        "Weather: Heavy Rain",
     ];
 
     const stadium = [
-        "Wembly",
-        "Old Trafford",
-        "St James' Park",
-        "Stamford Bridge",
-        "Ashton Gate",
-        "White Hart Lane",
+        "Stadium: Wembly",
+        "Stadium: Old Trafford",
+        "Stadium: St James' Park",
+        "Stadium: Stamford Bridge",
+        "Stadium: Ashton Gate",
+        "Stadium: White Hart Lane",
     ];
 
     const referee = [
-        "Howard Webb",
-        "Graham Poll",
-        "Mark Clattenburg",
-        "Mike Dean",
-        "Andre Marriner",
-        "Pierluigi Collina",
+        "Referee: Howard Webb",
+        "Referee: Graham Poll",
+        "Referee: Mark Clattenburg",
+        "Referee: Mike Dean",
+        "Referee: Andre Marriner",
+        "Referee: Pierluigi Collina",
     ];
 
     const weatherInfo = weather[Math.floor(Math.random() * weather.length)];

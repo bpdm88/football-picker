@@ -66,8 +66,8 @@ class PlayerForm extends React.Component {
         let { disabled } = this.props;
 
         return (
-            <section>
-                <h2>Create Players</h2>
+            <section className="small-card">
+                <h2 className="heading-bravo">Create Players</h2>
                 <form onSubmit={this.handleSubmit}>
                     <FormField
                         label="Name"
@@ -75,6 +75,7 @@ class PlayerForm extends React.Component {
                         type="text"
                         handleChange={this.handleChangePlayerName}
                         value={playerName}
+                        className="label-block"
                     />
                     <FormField
                         label="Attack Skill"
@@ -103,9 +104,15 @@ class PlayerForm extends React.Component {
                         handleChange={this.handleChangeCreativity}
                         value={creativity}
                     />
-                    <button disabled={disabled}>Add Player</button>
-                    <button type="button" onClick={this.handleAutomate}>
-                        Auto Generate Skills
+                    <button disabled={disabled} className="primary-button">
+                        Add Player
+                    </button>
+                    <button
+                        type="button"
+                        onClick={this.handleAutomate}
+                        className="primary-button"
+                    >
+                        Auto Skill
                     </button>
                 </form>
             </section>

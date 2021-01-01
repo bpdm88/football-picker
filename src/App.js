@@ -1,3 +1,4 @@
+import "./styles/index.css";
 import Header from "./components/Header/Header";
 import PlayerForm from "./components/PlayerForm";
 import PlayerList from "./components/PlayerList";

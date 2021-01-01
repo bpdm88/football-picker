@@ -1,0 +1,11 @@
+.teams {
+    display: flex;
+    justify-content: space-around;
+}
+
+.line-ups {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}

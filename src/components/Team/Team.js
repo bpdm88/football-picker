@@ -34,8 +34,8 @@ class Team extends React.Component {
         let { disabled } = this.props;
 
         return (
-            <section>
-                <h2>Create Teams</h2>
+            <section className="small-card">
+                <h2 className="heading-bravo">Create Teams</h2>
                 <form onSubmit={this.handleSubmit}>
                     <FormField
                         label="Team Name 1:"
@@ -43,6 +43,7 @@ class Team extends React.Component {
                         type="text"
                         handleChange={this.handleChangeTeamName1}
                         value={teamOne}
+                        className="label-block"
                     />
                     <FormField
                         label="Team Name 2:"
@@ -50,8 +51,11 @@ class Team extends React.Component {
                         type="text"
                         handleChange={this.handleChangeTeamName2}
                         value={teamTwo}
+                        className="label-block"
                     />
-                    <button disabled={disabled}>Generate Teams</button>
+                    <button disabled={disabled} className="primary-button">
+                        Add Teams
+                    </button>
                 </form>
             </section>
         );

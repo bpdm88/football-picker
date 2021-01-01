@@ -1,0 +1,23 @@
+.label-block {
+    display: block;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: var(--spacing-xs);
+}
+
+input {
+    font-family: Nunito, sans-serif;
+    margin-bottom: var(--spacing-lg);
+}
+
+@media screen and (max-width: 750px) {
+    input {
+        margin-bottom: var(--spacing-md);
+    }
+    label {
+        width: 100px;
+    }
+}

@@ -1,0 +1,12 @@
+@import "./reset.css";
+@import "./settings.css";
+@import "./typography.css";
+@import "./wrapper.css";
+@import "./header.css";
+@import "./large-card.css";
+@import "./small-card.css";
+@import "./button.css";
+@import "./form.css";
+@import "./player-list.css";
+@import "./team-news.css";
+@import "./finalScore.css";

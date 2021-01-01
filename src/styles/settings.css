@@ -1,0 +1,64 @@
+:root {
+    /* colours */
+
+    --primary-blue: #242a38;
+    --secondary-blue: #253341;
+    --green: #40e1b1;
+    --purple: #bc9eee;
+    --peach: #df90ac;
+    --light-blue: #81c4ea;
+    --grey: #8c8c8c;
+    --white: #ffffff;
+
+    /* spacing */
+
+    --spacing-xs: 5px;
+    --spacing-sm: 10px;
+    --spacing-md: 15px;
+    --spacing-lg: 20px;
+
+    /* card widths */
+
+    --card-width-xs: 300px;
+    --card-width-sm: 350px;
+    --card-width-md: 450px;
+    --card-width-lg: 500px;
+
+    /* card heights */
+
+    --card-height-xs: 300px;
+    --card-height-sm: 350px;
+    --card-height-md: 740px;
+    --card-height-lg: 850px;
+
+    /* font sizes */
+
+    --alpha-xs: 20px;
+    --alpha-sm: 30px;
+    --alpha-md: 40px;
+    --alpha-lg: 50px;
+
+    --bravo-xs: 18px;
+    --bravo-sm: 20px;
+    --bravo-md: 24px;
+    --bravo-lg: 28px;
+
+    --charlie-xs: 12px;
+    --charlie-sm: 14px;
+    --charlie-md: 16px;
+    --charlie-lg: 18px;
+
+    --delta-xs: 14px;
+    --delta-sm: 16px;
+    --delta-md: 18px;
+    --delta-lg: 20px;
+
+    --echo-xs: 32px;
+    --echo-sm: 40px;
+    --echo-md: 46px;
+    --echo-lg: 50px;
+
+    --standard-sm: 12px;
+    --standard-md: 14px;
+    --standard-lg: 16px;
+}

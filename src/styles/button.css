@@ -1,0 +1,36 @@
+.primary-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Nunito;
+    border: 2px solid var(--grey);
+    background-color: var(--green);
+    color: var(--white);
+    margin-right: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.secondary-button {
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    font-family: Nunito;
+    border: 2px solid var(--grey);
+    background-color: var(--purple);
+    color: var(--white);
+    margin-right: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+@media screen and (max-width: 750px) {
+    .primary-button {
+        width: 80px;
+        height: 40px;
+    }
+    .secondary-button {
+        width: 80px;
+        height: 40px;
+    }
+}

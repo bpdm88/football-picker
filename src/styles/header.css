@@ -1,0 +1,30 @@
+header {
+    grid-column: span 2;
+    width: 1030px;
+    height: 150px;
+    border-radius: 10px;
+    margin: var(--spacing-md);
+    background-color: var(--secondary-blue);
+    display: flex;
+    align-items: center;
+    padding: var(--spacing-lg);
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        width: 950px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    header {
+        width: 730px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        width: var(--card-width-xs);
+        padding: var(--spacing-sm);
+    }
+}

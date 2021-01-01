@@ -1,0 +1,16 @@
+.abilities {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--grey);
+}
+
+.scores {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+li {
+    padding-top: var(--spacing-sm);
+}
