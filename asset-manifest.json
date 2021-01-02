@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/subscriptions-app/static/css/main.b1b6b4f0.chunk.css",
+    "main.js": "/subscriptions-app/static/js/main.d3b5a8e1.chunk.js",
+    "main.js.map": "/subscriptions-app/static/js/main.d3b5a8e1.chunk.js.map",
+    "runtime-main.js": "/subscriptions-app/static/js/runtime-main.deed5c4d.js",
+    "runtime-main.js.map": "/subscriptions-app/static/js/runtime-main.deed5c4d.js.map",
+    "static/js/2.892fd930.chunk.js": "/subscriptions-app/static/js/2.892fd930.chunk.js",
+    "static/js/2.892fd930.chunk.js.map": "/subscriptions-app/static/js/2.892fd930.chunk.js.map",
+    "index.html": "/subscriptions-app/index.html",
+    "static/css/main.b1b6b4f0.chunk.css.map": "/subscriptions-app/static/css/main.b1b6b4f0.chunk.css.map",
+    "static/js/2.892fd930.chunk.js.LICENSE.txt": "/subscriptions-app/static/js/2.892fd930.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/subscriptions-app/static/media/Roboto-Bold.4f39c579.ttf",
+    "static/media/logo.4ab6ce34.svg": "/subscriptions-app/static/media/logo.4ab6ce34.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.deed5c4d.js",
+    "static/js/2.892fd930.chunk.js",
+    "static/css/main.b1b6b4f0.chunk.css",
+    "static/js/main.d3b5a8e1.chunk.js"
+  ]
+}
