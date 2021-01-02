@@ -17,6 +17,7 @@ class PlayerForm extends React.Component {
         this.handleChangeDefence = this.handleChangeDefence.bind(this);
         this.handleChangeCreativity = this.handleChangeCreativity.bind(this);
         this.handleAutomate = this.handleAutomate.bind(this);
+        this.handleSquad = this.handleSquad.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -59,6 +60,10 @@ class PlayerForm extends React.Component {
         this.setState({ attack: autoAttack });
         this.setState({ defence: autoDefence });
         this.setState({ creativity: autoCreativity });
+    }
+
+    handleSquad() {
+        this.props.handleAddSquad();
     }
 
     render() {
@@ -116,6 +121,13 @@ class PlayerForm extends React.Component {
                             className="primary-button"
                         >
                             Auto Skill
+                        </button>
+                        <button
+                            type="button"
+                            onClick={this.handleSquad}
+                            className="secondary-button"
+                        >
+                            Auto Squad
                         </button>
                     </div>
                 </form>
