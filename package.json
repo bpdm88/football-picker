@@ -2,7 +2,7 @@
   "name": "football-picker",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bpdm88.github.io/subscriptions-app/",
+  "homepage": "https://bpdm88.github.io/football-picker/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  
+
   "eslintConfig": {
     "extends": [
       "react-app",
