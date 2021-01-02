@@ -125,7 +125,7 @@ class PlayerForm extends React.Component {
                         <button
                             type="button"
                             onClick={this.handleSquad}
-                            className="primary-button"
+                            className="secondary-button"
                         >
                             Auto Squad
                         </button>
