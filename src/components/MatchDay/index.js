@@ -5,6 +5,7 @@ import { getResult } from "../../data/actions/state";
 let mapStateToProps = (state) => {
     return {
         matchInfo: state.matchInfo,
+        teamsSubmitted: state.teamsSubmitted,
     };
 };
 

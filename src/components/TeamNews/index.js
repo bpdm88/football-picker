@@ -8,6 +8,7 @@ let mapStateToProps = (state) => {
         team2: state.team2,
         teamName1: state.teamName1,
         teamName2: state.teamName2,
+        teamsSubmitted: state.teamsSubmitted,
     };
 };
 
