@@ -117,6 +117,9 @@ class PlayerForm extends React.Component {
                         >
                             Auto Skill
                         </button>
+                        <button type="button" className="primary-button">
+                            Auto Squad
+                        </button>
                     </div>
                 </form>
             </section>
