@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/football-picker/static/css/main.ac40589c.chunk.css",
-    "main.js": "/football-picker/static/js/main.8c386a0b.chunk.js",
-    "main.js.map": "/football-picker/static/js/main.8c386a0b.chunk.js.map",
+    "main.css": "/football-picker/static/css/main.442c54dc.chunk.css",
+    "main.js": "/football-picker/static/js/main.daabec53.chunk.js",
+    "main.js.map": "/football-picker/static/js/main.daabec53.chunk.js.map",
     "runtime-main.js": "/football-picker/static/js/runtime-main.b0a049aa.js",
     "runtime-main.js.map": "/football-picker/static/js/runtime-main.b0a049aa.js.map",
     "static/js/2.892fd930.chunk.js": "/football-picker/static/js/2.892fd930.chunk.js",
     "static/js/2.892fd930.chunk.js.map": "/football-picker/static/js/2.892fd930.chunk.js.map",
     "index.html": "/football-picker/index.html",
-    "static/css/main.ac40589c.chunk.css.map": "/football-picker/static/css/main.ac40589c.chunk.css.map",
+    "static/css/main.442c54dc.chunk.css.map": "/football-picker/static/css/main.442c54dc.chunk.css.map",
     "static/js/2.892fd930.chunk.js.LICENSE.txt": "/football-picker/static/js/2.892fd930.chunk.js.LICENSE.txt",
     "static/media/index.css": "/football-picker/static/media/Roboto-Bold.4f39c579.ttf",
     "static/media/logo.4ab6ce34.svg": "/football-picker/static/media/logo.4ab6ce34.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.b0a049aa.js",
     "static/js/2.892fd930.chunk.js",
-    "static/css/main.ac40589c.chunk.css",
-    "static/js/main.8c386a0b.chunk.js"
+    "static/css/main.442c54dc.chunk.css",
+    "static/js/main.daabec53.chunk.js"
   ]
 }
