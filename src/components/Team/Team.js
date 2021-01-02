@@ -27,6 +27,8 @@ class Team extends React.Component {
         event.preventDefault();
 
         this.props.handleGenerateTeams({ ...this.state });
+
+        this.setState({ teamOne: "", teamTwo: "" });
     }
 
     render() {
