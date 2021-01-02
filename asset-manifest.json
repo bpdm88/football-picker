@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/subscriptions-app/static/css/main.b1b6b4f0.chunk.css",
-    "main.js": "/subscriptions-app/static/js/main.d3b5a8e1.chunk.js",
-    "main.js.map": "/subscriptions-app/static/js/main.d3b5a8e1.chunk.js.map",
-    "runtime-main.js": "/subscriptions-app/static/js/runtime-main.deed5c4d.js",
-    "runtime-main.js.map": "/subscriptions-app/static/js/runtime-main.deed5c4d.js.map",
-    "static/js/2.892fd930.chunk.js": "/subscriptions-app/static/js/2.892fd930.chunk.js",
-    "static/js/2.892fd930.chunk.js.map": "/subscriptions-app/static/js/2.892fd930.chunk.js.map",
-    "index.html": "/subscriptions-app/index.html",
-    "static/css/main.b1b6b4f0.chunk.css.map": "/subscriptions-app/static/css/main.b1b6b4f0.chunk.css.map",
-    "static/js/2.892fd930.chunk.js.LICENSE.txt": "/subscriptions-app/static/js/2.892fd930.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/subscriptions-app/static/media/Roboto-Bold.4f39c579.ttf",
-    "static/media/logo.4ab6ce34.svg": "/subscriptions-app/static/media/logo.4ab6ce34.svg"
+    "main.css": "/football-picker/static/css/main.ac40589c.chunk.css",
+    "main.js": "/football-picker/static/js/main.d3b5a8e1.chunk.js",
+    "main.js.map": "/football-picker/static/js/main.d3b5a8e1.chunk.js.map",
+    "runtime-main.js": "/football-picker/static/js/runtime-main.b0a049aa.js",
+    "runtime-main.js.map": "/football-picker/static/js/runtime-main.b0a049aa.js.map",
+    "static/js/2.892fd930.chunk.js": "/football-picker/static/js/2.892fd930.chunk.js",
+    "static/js/2.892fd930.chunk.js.map": "/football-picker/static/js/2.892fd930.chunk.js.map",
+    "index.html": "/football-picker/index.html",
+    "static/css/main.ac40589c.chunk.css.map": "/football-picker/static/css/main.ac40589c.chunk.css.map",
+    "static/js/2.892fd930.chunk.js.LICENSE.txt": "/football-picker/static/js/2.892fd930.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/football-picker/static/media/Roboto-Bold.4f39c579.ttf",
+    "static/media/logo.4ab6ce34.svg": "/football-picker/static/media/logo.4ab6ce34.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.deed5c4d.js",
+    "static/js/runtime-main.b0a049aa.js",
     "static/js/2.892fd930.chunk.js",
-    "static/css/main.b1b6b4f0.chunk.css",
+    "static/css/main.ac40589c.chunk.css",
     "static/js/main.d3b5a8e1.chunk.js"
   ]
 }
