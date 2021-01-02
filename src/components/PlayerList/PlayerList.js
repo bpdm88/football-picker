@@ -3,11 +3,11 @@ const PlayerList = ({ players }) => {
         <section className="large-card">
             <h2 className="heading-bravo">Available Squad</h2>
             <div class="abilities">
-                <h4 className="heading-charlie">Player</h4>
+                <h3 className="heading-charlie">Player</h3>
                 <div className="scores">
-                    <h4 className="heading-charlie">Attack</h4>
-                    <h4 className="heading-charlie">Defend</h4>
-                    <h4 className="heading-charlie">Creativity</h4>
+                    <h3 className="heading-charlie">Attack</h3>
+                    <h3 className="heading-charlie">Defend</h3>
+                    <h3 className="heading-charlie">Creativity</h3>
                 </div>
             </div>
             <ul>
