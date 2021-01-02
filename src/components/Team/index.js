@@ -5,6 +5,7 @@ import { generate } from "../../data/actions/state";
 let mapStateToProps = (state) => {
     return {
         disabled: state.teamsSubmitted,
+        listComplete: state.listComplete,
     };
 };
 

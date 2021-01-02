@@ -1,5 +1,6 @@
 const initial = {
     players: [],
+    listComplete: false,
     team1: [],
     team2: [],
     teamName1: "",

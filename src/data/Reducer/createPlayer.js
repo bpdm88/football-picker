@@ -9,6 +9,7 @@ const createPlayer = (state, action) => ({
             creativity: action.creativity,
         },
     ],
+    listComplete: state.players.length === 9,
 });
 
 export default createPlayer;
