@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import PlayerForm from "./PlayerForm";
-import { add } from "../../data/actions/state";
+import { add, getSquad } from "../../data/actions/state";
 
 let mapStateToProps = (state) => {
     return {
@@ -11,6 +11,7 @@ let mapStateToProps = (state) => {
 let mapDispatchToProps = (dispatch) => {
     return {
         handleAddPlayer: (data) => dispatch(add(data)),
+        handleAddSquad: () => dispatch(getSquad()),
     };
 };
 

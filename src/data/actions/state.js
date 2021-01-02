@@ -8,6 +8,12 @@ export const add = (data) => {
     };
 };
 
+export const getSquad = () => {
+    return {
+        type: "ADD_SQUAD",
+    };
+};
+
 export const generate = (data) => {
     return {
         type: "GENERATE_TEAMS",

@@ -62,7 +62,9 @@ class PlayerForm extends React.Component {
         this.setState({ creativity: autoCreativity });
     }
 
-    handleSquad() {}
+    handleSquad() {
+        this.props.handleAddSquad();
+    }
 
     render() {
         let { playerName, attack, defence, creativity } = this.state;
