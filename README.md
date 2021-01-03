@@ -1,70 +1,36 @@
-# Getting Started with Create React App!
+# football-picker - Futbol 5aside
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was set as part of a technical challenge after completinig the DevelopMe_ coding bootcamp.
 
-## Available Scripts
+A React / Redux built app that allows users to create and customise two randomly selected five a side teams and return match confitions plus the games result.
 
-In the project directory, you can run:
+You can checkout the app by visiting it [here](https://bpdm88.github.io/football-picker/)
 
-### `npm start`
+## User Experience
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Step 1*: The **'Create Player'** section allows the user to enter a name and adjust each skill (attack, defence, creativity) between a range of 0 - 5. alternativly the user can select **'Auto Skill'** which will randomly assign the player a score for each attribute. Having done this when teh user clicks **'Add Player'** it will be added to the **'Available Squad'** card.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Alternatively, the user can use the **'Auto Squad'** button which will randomly select 10 of the 30 pre-made players available. This option will remove any previously added players to the **'Available Squad'**.
 
-### `npm test`
+*Step 2*: Once 10 players have been added either via the user adding them themselves or using the 'Auto Squad' option the **'Create Teams'** card will display details fo rthe user to add to team names and the submit them via the '**'Add Teams'** button.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+*Step 3*: On doing this the squad will be randomly split in to two seperate teams of five in the **'Team News'** card. The user can then click the **'Match Info'** button to get the match day settings.
 
-### `npm run build`
+*Step 4*: After the **'Match Day Information'** displays the user can click **'Kick Off'** which willl generate the games result in the **'Final Score'** card.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+*Step 5*: The **'Post Match Report'** will show the user the Man of the Match, confirm who won the game and give the user an option to **'Reset'** which will take the user back to the pages initial set-up.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Apps Methodologies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Final Score** - The final score is based on each teams total abilities (attack, defence, creativity) for each player. The higher the teams attack and creativity the more likely they are to score more goals, the higher the oppositions defence score the more able they are to negate the number of goals scored by the opposition.
 
-### `npm run eject`
+Step 1: Each abillity is totalled for each team
+Step 2: Each score is then divided by 5 to achieve a more realistic score i.e. ( a max score of 25 would equal 5)
+Step 3: The defence score is then halved i.e ( a max score of 25 would equal 5 and then halved to be 2.5 )
+Step 4: An enhancement of 0 to 4 is then added depending on the teams creativity score ( i.e. a team creativity score of 1.3 would equal an enhancement of 0.5)
+Step 5: The attack score is added to the creativity score and then teh oppositions defence score is deducted. (i.e. attack 3.3 + creativity 0.5 - opps defence 1 = 2.8 )
+Step 6: The score is the rounded up or down - therefore 2.8 becomes 3 goals scores for that team.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Man of the Match** - A player is randomly selected from either the winning team or if the score was a draw then from the entire player list.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Match info** - Weather is randomly selected from an array of 6 options, the stadium is randomly selected from an array of 6 options, the referee is randomly selected from 6 options. The SkyBet tip calculates which team has the higher attacking ability and selects them as teh favourite, if teh attack scores are the same the tip will eb for a draw. 
