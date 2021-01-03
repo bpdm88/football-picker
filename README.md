@@ -49,6 +49,12 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 
 Example: Team A (Attack - 21, Creativity 14) Team B (Defence 10) = 4.2 + 1 - 1 = 4.2 when rounded: 4 Goals scored by Team A.
 
-**Man of the Match** - A player is randomly selected from either the winning team or if the score was a draw then from the entire player list.
+**Man of the Match** 
 
-**Match info** - Weather is randomly selected from an array of 6 options, the stadium is randomly selected from an array of 6 options, the referee is randomly selected from 6 options. The SkyBet tip calculates which team has the higher attacking ability and selects them as teh favourite, if teh attack scores are the same the tip will eb for a draw. 
+- A player is randomly selected from either the winning team or if the score was a draw then from the entire player list.
+
+**Match info** 
+
+- Weather, Stadium and Referee each have six options and one of each is randomly selected for the game. 
+
+- The SkyBet tip calculates which team has the higher attacking ability and sets them as favourite, if attack scores are the same the tip will be for a draw. 
