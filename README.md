@@ -19,12 +19,12 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 
 *Step 2*
 
-- Once 10 players have been added the **'Create Teams'** card will display details for the user to add to team names 
+- Once 10 players have been added the **'Create Teams'** card will display details for the user to add team names 
 - Click the '**'Add Teams'** button to submit the teams.
 
 *Step 3*
 
-- On submit the squad will be randomly split in to two seperate teams of five in the **'Team News'** card. 
+- On submit the squad will be randomly split the squad in to two seperate teams of five in the **'Team News'** card. 
 - The user can then click the **'Match Info'** button to get the match day settings.
 
 *Step 4* 
@@ -55,6 +55,6 @@ Example: Team A (Attack - 21, Creativity 14) Team B (Defence 10) = 4.2 + 1 - 1 =
 
 **Match info** 
 
-- Weather, Stadium and Referee each have six options and one of each is randomly selected for the game. 
+- Weather, Stadium and Referee each have six options and one is returned randoml for each game. 
 
 - The SkyBet tip calculates which team has the higher attacking ability and sets them as favourite, if attack scores are the same the tip will be for a draw. 
