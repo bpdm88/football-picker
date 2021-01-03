@@ -11,7 +11,7 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 *Step 1*: 
 
 - The **'Create Player'** section allows the user to enter a name and adjust each skill (attack, defence, creativity) between a range of 0 - 5. 
-- Alternativly the user can select **'Auto Skill'** which will randomly assign the player a score for each attribute.
+- If preferred the user can select **'Auto Skill'** which will randomly assign the player a score for each attribute.
 - When the user clicks **'Add Player'** it will be added to the **'Available Squad'** card.
 
 - Alternatively, the user can use the **'Auto Squad'** button which will randomly select 10 of the 30 pre-made players available. 
@@ -36,7 +36,7 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 - The **'Post Match Report'** will show the user the Man of the Match and confirm who won the game.
 - Finally the user can select to **'Reset'** which will take the user back to the pages initial set-up.
 
-## Apps Methodologies:
+## Apps Logic:
 
 **Final Score** - The final score is based on each teams total abilities (attack, defence, creativity) for each player. 
 
