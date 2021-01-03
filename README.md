@@ -15,7 +15,7 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 - When the user clicks **'Add Player'** it will be added to the **'Available Squad'** card.
 
 - Alternatively, the user can use the **'Auto Squad'** button which will randomly select 10 of the 30 pre-made players available. 
-- This option will remove any previously added players to the **'Available Squad'**.
+- This option will remove any previously added players in the **'Available Squad'**.
 
 *Step 2*
 
