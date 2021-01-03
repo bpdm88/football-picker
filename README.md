@@ -8,11 +8,14 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 
 ## User Experience
 
-*Step 1*: The **'Create Player'** section allows the user to enter a name and adjust each skill (attack, defence, creativity) between a range of 0 - 5. 
-          Alternativly the user can select **'Auto Skill'** which will randomly assign the player a score for each attribute.
-          When the user clicks **'Add Player'** it will be added to the **'Available Squad'** card.
+*Step 1*: 
 
-Alternatively, the user can use the **'Auto Squad'** button which will randomly select 10 of the 30 pre-made players available. This option will remove any previously added players to the **'Available Squad'**.
+- The **'Create Player'** section allows the user to enter a name and adjust each skill (attack, defence, creativity) between a range of 0 - 5. 
+- Alternativly the user can select **'Auto Skill'** which will randomly assign the player a score for each attribute.
+- When the user clicks **'Add Player'** it will be added to the **'Available Squad'** card.
+
+- Alternatively, the user can use the **'Auto Squad'** button which will randomly select 10 of the 30 pre-made players available. 
+- This option will remove any previously added players to the **'Available Squad'**.
 
 *Step 2*: Once 10 players have been added either via the user adding them themselves or using the 'Auto Squad' option the **'Create Teams'** card will display details fo rthe user to add to team names and the submit them via the '**'Add Teams'** button.
 
