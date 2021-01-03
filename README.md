@@ -36,7 +36,7 @@ You can checkout the app by visiting it [here](https://bpdm88.github.io/football
 - The **'Post Match Report'** will show the user the Man of the Match and confirm who won the game.
 - Finally the user can select to **'Reset'** which will take the user back to the pages initial set-up.
 
-### Apps Methodologies:
+## Apps Methodologies:
 
 **Final Score** - The final score is based on each teams total abilities (attack, defence, creativity) for each player. 
 
